@@ -110,7 +110,7 @@ namespace QL_cua_hang_tien_loi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 453);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.txtFind);
