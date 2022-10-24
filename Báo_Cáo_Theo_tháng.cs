@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class Quy_Định : Form
+    public partial class Báo_Cáo_Theo_tháng : Form
     {
-        public Quy_Định()
+        public Báo_Cáo_Theo_tháng()
         {
             InitializeComponent();
         }

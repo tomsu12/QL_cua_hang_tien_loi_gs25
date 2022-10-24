@@ -43,7 +43,6 @@ namespace QL_cua_hang_tien_loi
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -106,7 +105,7 @@ namespace QL_cua_hang_tien_loi
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(522, 327);
+            this.button3.Location = new System.Drawing.Point(513, 173);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(157, 99);
             this.button3.TabIndex = 8;
@@ -183,20 +182,6 @@ namespace QL_cua_hang_tien_loi
             this.label1.TabIndex = 15;
             this.label1.Text = "Quản Lý Cửa Hàng Tiện Lợi GS25";
             // 
-            // button8
-            // 
-            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Cursor = System.Windows.Forms.Cursors.PanSW;
-            this.button8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(522, 474);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(157, 99);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "Quy Định";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Aqua;
@@ -234,7 +219,7 @@ namespace QL_cua_hang_tien_loi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(561, 173);
+            this.label2.Location = new System.Drawing.Point(755, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 24);
             this.label2.TabIndex = 21;
@@ -267,7 +252,6 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -304,7 +288,6 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;

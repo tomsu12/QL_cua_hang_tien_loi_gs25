@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class Loại_SP : Form
+    public partial class Chi_tiết_hóa_đơn_bán_hàng : Form
     {
-        public Loại_SP()
+        public Chi_tiết_hóa_đơn_bán_hàng()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace QL_cua_hang_tien_loi
 {
-    partial class Dơn_Hang
+    partial class Hóa_đơn_bán_hàng
     {
         /// <summary>
         /// Required designer variable.
@@ -191,7 +191,7 @@ namespace QL_cua_hang_tien_loi
             this.panel8.Controls.Add(this.txtTienHang);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Controls.Add(this.label21);
-            this.panel8.Location = new System.Drawing.Point(17, 448);
+            this.panel8.Location = new System.Drawing.Point(12, 428);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(324, 134);
@@ -273,7 +273,7 @@ namespace QL_cua_hang_tien_loi
             this.panel7.Controls.Add(this.label28);
             this.panel7.Controls.Add(this.label26);
             this.panel7.Controls.Add(this.label27);
-            this.panel7.Location = new System.Drawing.Point(340, 545);
+            this.panel7.Location = new System.Drawing.Point(335, 525);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(669, 37);
@@ -345,7 +345,7 @@ namespace QL_cua_hang_tien_loi
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel6.Location = new System.Drawing.Point(15, 590);
+            this.panel6.Location = new System.Drawing.Point(10, 570);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(994, 16);
@@ -440,7 +440,7 @@ namespace QL_cua_hang_tien_loi
             this.panel5.Controls.Add(this.label24);
             this.panel5.Controls.Add(this.label23);
             this.panel5.Controls.Add(this.txtThanhToan);
-            this.panel5.Location = new System.Drawing.Point(341, 458);
+            this.panel5.Location = new System.Drawing.Point(336, 438);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(669, 91);
@@ -607,7 +607,7 @@ namespace QL_cua_hang_tien_loi
             this.SoLuong,
             this.ChietKhauMatHang,
             this.ThanhTien});
-            this.dataGridView1.Location = new System.Drawing.Point(347, 206);
+            this.dataGridView1.Location = new System.Drawing.Point(342, 186);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -820,7 +820,7 @@ namespace QL_cua_hang_tien_loi
             this.panel4.Controls.Add(this.label25);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(16, 228);
+            this.panel4.Location = new System.Drawing.Point(11, 208);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(325, 222);
@@ -1115,7 +1115,7 @@ namespace QL_cua_hang_tien_loi
             // 
             this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(15, 202);
+            this.panel3.Location = new System.Drawing.Point(10, 182);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(325, 28);
@@ -1164,7 +1164,7 @@ namespace QL_cua_hang_tien_loi
             this.panel1.Controls.Add(this.txtTenKh);
             this.panel1.Controls.Add(this.txtDiaChi);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(16, 56);
+            this.panel1.Location = new System.Drawing.Point(11, 36);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(993, 147);
@@ -1211,7 +1211,7 @@ namespace QL_cua_hang_tien_loi
             this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Location = new System.Drawing.Point(16, 30);
+            this.panel2.Location = new System.Drawing.Point(11, 10);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(993, 27);
@@ -1229,11 +1229,11 @@ namespace QL_cua_hang_tien_loi
             this.label8.TabIndex = 107;
             this.label8.Text = "Thông tin đơn hàng";
             // 
-            // Dơn_Hang
+            // Hóa_đơn_bán_hàng
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 636);
+            this.ClientSize = new System.Drawing.Size(1022, 597);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
@@ -1243,8 +1243,8 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "Dơn_Hang";
-            this.Text = "Dơn_Hang";
+            this.Name = "Hóa_đơn_bán_hàng";
+            this.Text = "Hóa_đơn_bán_hàng";
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);

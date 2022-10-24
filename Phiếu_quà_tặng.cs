@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class Dơn_Hang : Form
+    public partial class Phiếu_quà_tặng : Form
     {
-        public Dơn_Hang()
+        public Phiếu_quà_tặng()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
