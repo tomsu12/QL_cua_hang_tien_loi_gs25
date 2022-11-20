@@ -178,6 +178,7 @@ namespace QL_cua_hang_tien_loi
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(683, 245);
             this.dataGridView1.TabIndex = 26;
             // 
@@ -280,13 +281,13 @@ namespace QL_cua_hang_tien_loi
             this.panel2.Size = new System.Drawing.Size(683, 30);
             this.panel2.TabIndex = 27;
             // 
-            // Chức_Vụ
+            // Chuc_vu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 398);
             this.Controls.Add(this.panel3);
-            this.Name = "Chức_Vụ";
+            this.Name = "Chuc_vu";
             this.Text = "Chức_Vụ";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

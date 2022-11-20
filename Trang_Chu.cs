@@ -12,9 +12,15 @@ namespace QL_cua_hang_tien_loi
 {
     public partial class Trang_Chu : Form
     {
+        public Label GetName { get { return this.label2; } }
+        public Label GetCareer { get { return this.label4; } }
+        public Bunifu.UI.WinForms.BunifuPictureBox GetImage { get { return this.bunifuPictureBox1; } }
+        public Label GetID { get { return this.label5; } }
         public Trang_Chu()
         {
             InitializeComponent();
+            label5.Visible = false;
+            
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -245,6 +251,47 @@ namespace QL_cua_hang_tien_loi
         private void báoCáoCôngNợToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(tabPage1);
+        }
+
+        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(tabPage2);
+        }
+
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(tabPage3);
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(tabPage4);
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(tabPage5);
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(tabPage6);
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            var res = MessageBox.Show("Do you want to logout? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res == DialogResult.Yes)
+            {
+                Dang_nhap newLogin = new Dang_nhap();
+                this.Hide();
+                newLogin.ShowDialog();
+            }
         }
     }
 }

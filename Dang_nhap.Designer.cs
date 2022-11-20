@@ -52,12 +52,11 @@ namespace QL_cua_hang_tien_loi
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pass = new Bunifu.UI.WinForms.BunifuTextBox();
             this.carousel1 = new Syncfusion.Windows.Forms.Tools.Carousel();
-            this.bunifuDropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -81,7 +80,7 @@ namespace QL_cua_hang_tien_loi
             this.buttonsignin.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.buttonsignin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonsignin.BackgroundImage")));
             this.buttonsignin.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.buttonsignin.ButtonText = "Log In";
+            this.buttonsignin.ButtonText = "Sign In";
             this.buttonsignin.ButtonTextMarginLeft = 0;
             this.buttonsignin.ColorContrastOnClick = 45;
             this.buttonsignin.ColorContrastOnHover = 45;
@@ -114,7 +113,7 @@ namespace QL_cua_hang_tien_loi
             this.buttonsignin.IdleIconLeftImage = null;
             this.buttonsignin.IdleIconRightImage = null;
             this.buttonsignin.IndicateFocus = false;
-            this.buttonsignin.Location = new System.Drawing.Point(1051, 411);
+            this.buttonsignin.Location = new System.Drawing.Point(1062, 411);
             this.buttonsignin.Name = "buttonsignin";
             this.buttonsignin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.buttonsignin.OnDisabledState.BorderRadius = 1;
@@ -344,65 +343,17 @@ namespace QL_cua_hang_tien_loi
             this.carousel1.PadY = 0;
             this.carousel1.Perspective = 4F;
             this.carousel1.RotateAlways = true;
-            this.carousel1.ShowImagePreview = false;
+            this.carousel1.ShowImagePreview = true;
             this.carousel1.ShowImageShadow = true;
             this.carousel1.Size = new System.Drawing.Size(896, 547);
             this.carousel1.TabIndex = 3;
             this.carousel1.Text = "carousel1";
+            this.carousel1.ThemeName = "Metro";
             this.carousel1.TouchTransitionSpeed = 1F;
             this.carousel1.UseOriginalImageinPreview = false;
+            this.carousel1.VisualStyle = Syncfusion.Windows.Forms.Tools.CarouselVisualStyle.Metro;
             this.carousel1.Click += new System.EventHandler(this.carousel1_Click);
             this.carousel1.DoubleClick += new System.EventHandler(this.carousel1_DoubleClick);
-            // 
-            // bunifuDropdown1
-            // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDropdown1.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuDropdown1.BorderRadius = 1;
-            this.bunifuDropdown1.Color = System.Drawing.Color.Silver;
-            this.bunifuDropdown1.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.bunifuDropdown1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bunifuDropdown1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bunifuDropdown1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.bunifuDropdown1.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.bunifuDropdown1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.bunifuDropdown1.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.bunifuDropdown1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bunifuDropdown1.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bunifuDropdown1.FillDropDown = true;
-            this.bunifuDropdown1.FillIndicator = false;
-            this.bunifuDropdown1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuDropdown1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDropdown1.FormattingEnabled = true;
-            this.bunifuDropdown1.Icon = null;
-            this.bunifuDropdown1.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bunifuDropdown1.IndicatorColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown1.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bunifuDropdown1.ItemBackColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.ItemBorderColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.ItemForeColor = System.Drawing.Color.Black;
-            this.bunifuDropdown1.ItemHeight = 26;
-            this.bunifuDropdown1.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDropdown1.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items.AddRange(new object[] {
-            "Tiếng Việt",
-            "English",
-            "Spanish",
-            "French",
-            "China",
-            "Japan",
-            "Korean"});
-            this.bunifuDropdown1.ItemTopMargin = 3;
-            this.bunifuDropdown1.Location = new System.Drawing.Point(1250, 534);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.Size = new System.Drawing.Size(116, 32);
-            this.bunifuDropdown1.TabIndex = 4;
-            this.bunifuDropdown1.Text = null;
-            this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bunifuDropdown1.TextLeftMargin = 5;
             // 
             // pictureBox2
             // 
@@ -415,24 +366,40 @@ namespace QL_cua_hang_tien_loi
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // bunifuThinButton21
             // 
-            this.button1.Location = new System.Drawing.Point(1335, 609);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(8, 8);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Sign Up";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(1048, 502);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
+            this.bunifuThinButton21.TabIndex = 7;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // label1
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Location = new System.Drawing.Point(958, 534);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 32);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Exit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1123, 468);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 22);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Or";
             // 
             // Dang_nhap
             // 
@@ -441,10 +408,9 @@ namespace QL_cua_hang_tien_loi
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1378, 635);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.bunifuDropdown1);
             this.Controls.Add(this.carousel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pass);
@@ -461,6 +427,7 @@ namespace QL_cua_hang_tien_loi
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -472,12 +439,11 @@ namespace QL_cua_hang_tien_loi
         private Bunifu.UI.WinForms.BunifuTextBox username;
         private Syncfusion.Windows.Forms.Tools.Carousel carousel1;
         private Bunifu.UI.WinForms.BunifuTextBox pass;
-        private Bunifu.UI.WinForms.BunifuDropdown bunifuDropdown1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }
 

@@ -153,36 +153,13 @@ namespace QL_cua_hang_tien_loi
             }
             else if (Login(name, password))
             {
-                if (!string.IsNullOrEmpty(getICM(name)))
-                {
-                    Trang_Chu main = new Trang_Chu();
-                    this.Hide();
-                    main.GetName.Text = GetName(name).ToString();
-                    main.GetCareer.Text = GetCareer(name).ToString();
-                    main.GetImage.Image = GetImage(name);
-                    main.ID.Text = GETID(name).ToString();
-                    main.ShowDialog();
-                }
-                else
-                {
-                    // Add Feature avoid users Login into System 
-                    var ez = MessageBox.Show("We recognize that you are't complete all your personal information \n Do you want to complete it", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (ez == DialogResult.Yes)
-                    {
-                        Info retype = new Info();
-                        retype.Show();
-                        retype.SetName.Text = Getame(username);
-                        retype.SetName.Enabled = false;
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sorry, This is one of the mandatory terms that needs to be done for the purpose of identity verification\nand for the sake of the security and safety of the system.");
-                        SignIn New = new SignIn();
-                        New.Show();
-                        this.Hide();
-                    }
-                }
+                Trang_Chu main = new Trang_Chu();
+                this.Hide();
+                main.GetName.Text = GetName(name).ToString();
+                main.GetCareer.Text = GetCareer(name).ToString();
+                main.GetImage.Image = GetImage(name);
+                main.GetID.Text = GETID(name).ToString();
+                main.ShowDialog();
 
             }
             else

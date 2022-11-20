@@ -31,7 +31,7 @@ namespace QL_cua_hang_tien_loi.DAO
 
         public string GetName(string username)
         {
-            string getname = "select * From nhanvien where Email = N'" + username + "'";
+            string getname = "select * From NhanVien where Email = N'" + username + "'";
             DataTable ExportName = DataProvider.Instance.ExecuteQuery(getname);
             string Fullname = ExportName.Rows[0].ItemArray[1].ToString();
             return Fullname;
@@ -39,7 +39,7 @@ namespace QL_cua_hang_tien_loi.DAO
 
         public string GetCareer(string username)
         {
-            string getcareer = "select * From nhanvien where Email = N'" + username + "'";
+            string getcareer = "select * From NhanVien where Email = N'" + username + "'";
             DataTable ExportCareer = DataProvider.Instance.ExecuteQuery(getcareer);
             string career = ExportCareer.Rows[0].ItemArray[12].ToString();
             return career;
@@ -47,7 +47,7 @@ namespace QL_cua_hang_tien_loi.DAO
 
         public string GetICM(string username)
         {
-            string getICM = "select * from nhanvien where Email = N'" + username + "'";
+            string getICM = "select * from NhanVien where Email = N'" + username + "'";
             DataTable exportICM = DataProvider.Instance.ExecuteQuery(getICM);
             string ICM = exportICM.Rows[0].ItemArray[8].ToString();
             return ICM;
@@ -56,7 +56,7 @@ namespace QL_cua_hang_tien_loi.DAO
 
         public string GETID(string username)
         {
-            string Id = "SELECT * FROM nhanvien WHERE Email = N'" + username + "'";
+            string Id = "SELECT * FROM NhanVien WHERE Email = N'" + username + "'";
             DataTable exportID = DataProvider.Instance.ExecuteQuery(Id);
             string GID = exportID.Rows[0].ItemArray[0].ToString();
             return GID;
@@ -64,7 +64,7 @@ namespace QL_cua_hang_tien_loi.DAO
 
         public bool GetPhone(string Phone)
         {
-            string getPhone = "Select Phone from nhanvien where Phone = N'" + Phone + "'";
+            string getPhone = "Select Phone from nhanvien where SDT = N'" + Phone + "'";
             DataTable exportPhone = DataProvider.Instance.ExecuteQuery(getPhone);
             return exportPhone.Rows.Count > 0;
         }
