@@ -237,6 +237,8 @@
     <Compile Include="Danh_Sách_Phiếu_Thu.Designer.cs">
       <DependentUpon>Danh_Sách_Phiếu_Thu.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="Hàng_SX.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,12 +305,6 @@
     <Compile Include="Phiếu_quà_tặng.Designer.cs">
       <DependentUpon>Phiếu_quà_tặng.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phiếu_thu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Phiếu_thu.Designer.cs">
-      <DependentUpon>Phiếu_thu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Quản_lý_Kho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,12 +318,6 @@
     </Compile>
     <Compile Include="Sản_Phẩm.Designer.cs">
       <DependentUpon>Sản_Phẩm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Thống_Kê.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Thống_Kê.Designer.cs">
-      <DependentUpon>Thống_Kê.cs</DependentUpon>
     </Compile>
     <Compile Include="Trang_Chu.cs">
       <SubType>Form</SubType>
@@ -412,9 +402,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Phiếu_quà_tặng.resx">
       <DependentUpon>Phiếu_quà_tặng.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Phiếu_thu.resx">
-      <DependentUpon>Phiếu_thu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

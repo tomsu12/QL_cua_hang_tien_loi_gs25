@@ -217,13 +217,13 @@ namespace QL_cua_hang_tien_loi
             // theoNgàyToolStripMenuItem
             // 
             this.theoNgàyToolStripMenuItem.Name = "theoNgàyToolStripMenuItem";
-            this.theoNgàyToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.theoNgàyToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.theoNgàyToolStripMenuItem.Text = "Theo ngày";
             // 
             // theoThángToolStripMenuItem
             // 
             this.theoThángToolStripMenuItem.Name = "theoThángToolStripMenuItem";
-            this.theoThángToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.theoThángToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.theoThángToolStripMenuItem.Text = "Theo tháng";
             // 
             // báoCáoKhoToolStripMenuItem
@@ -237,7 +237,7 @@ namespace QL_cua_hang_tien_loi
             // ItemBaoCaoTheoLoNhap
             // 
             this.ItemBaoCaoTheoLoNhap.Name = "ItemBaoCaoTheoLoNhap";
-            this.ItemBaoCaoTheoLoNhap.Size = new System.Drawing.Size(180, 24);
+            this.ItemBaoCaoTheoLoNhap.Size = new System.Drawing.Size(164, 24);
             this.ItemBaoCaoTheoLoNhap.Text = "Theo lô nhập";
             // 
             // báoCáoCôngNợToolStripMenuItem
@@ -314,7 +314,7 @@ namespace QL_cua_hang_tien_loi
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
-            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuHeThong,
             this.MenuDanhMucDauVao,
@@ -528,7 +528,7 @@ namespace QL_cua_hang_tien_loi
             // 
             this.ItemHoaDonBanLe.Name = "ItemHoaDonBanLe";
             this.ItemHoaDonBanLe.Size = new System.Drawing.Size(239, 24);
-            this.ItemHoaDonBanLe.Text = "Hóa đơn bán lẻ";
+            this.ItemHoaDonBanLe.Text = "Hóa đơn bán hàng";
             // 
             // ItemPhieuChuyenKho
             // 
