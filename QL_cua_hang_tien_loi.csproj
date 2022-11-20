@@ -165,65 +165,65 @@
     <Compile Include="Ban_hang.Designer.cs">
       <DependentUpon>Ban_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Báo_Cáo_theo_ngày.cs">
+    <Compile Include="Bao_ccao_theo_ngay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Báo_Cáo_theo_ngày.Designer.cs">
-      <DependentUpon>Báo_Cáo_theo_ngày.cs</DependentUpon>
+    <Compile Include="Bao_ccao_theo_ngay.Designer.cs">
+      <DependentUpon>Bao_ccao_theo_ngay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Báo_Cáo_theo_nhân_viên.cs">
+    <Compile Include="Bao_cao_theo_nhan_vien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Báo_Cáo_theo_nhân_viên.Designer.cs">
-      <DependentUpon>Báo_Cáo_theo_nhân_viên.cs</DependentUpon>
+    <Compile Include="Bao_cao_theo_nhan_vien.Designer.cs">
+      <DependentUpon>Bao_cao_theo_nhan_vien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Báo_Cáo_Theo_tháng.cs">
+    <Compile Include="Bao_cao_theo_thang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Báo_Cáo_Theo_tháng.Designer.cs">
-      <DependentUpon>Báo_Cáo_Theo_tháng.cs</DependentUpon>
+    <Compile Include="Bao_cao_theo_thang.Designer.cs">
+      <DependentUpon>Bao_cao_theo_thang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bộ_phận.cs">
+    <Compile Include="Bo_phan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bộ_phận.Designer.cs">
-      <DependentUpon>Bộ_phận.cs</DependentUpon>
+    <Compile Include="Bo_phan.Designer.cs">
+      <DependentUpon>Bo_phan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chi_tiết_ hóa_đơn_nhâp_hàng.cs">
+    <Compile Include="Chi_tiet_hoa_don_nhap_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chi_tiết_ hóa_đơn_nhâp_hàng.Designer.cs">
-      <DependentUpon>Chi_tiết_ hóa_đơn_nhâp_hàng.cs</DependentUpon>
+    <Compile Include="Chi_tiet_hoa_don_nhap_hang.Designer.cs">
+      <DependentUpon>Chi_tiet_hoa_don_nhap_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chi_tiết_hóa_đơn_bán_hàng.cs">
+    <Compile Include="Chi_tiet_hoa_dn_ban_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chi_tiết_hóa_đơn_bán_hàng.Designer.cs">
-      <DependentUpon>Chi_tiết_hóa_đơn_bán_hàng.cs</DependentUpon>
+    <Compile Include="Chi_tiet_hoa_dn_ban_hang.Designer.cs">
+      <DependentUpon>Chi_tiet_hoa_dn_ban_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chức_Vụ.cs">
+    <Compile Include="Chuc_vu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chức_Vụ.Designer.cs">
-      <DependentUpon>Chức_Vụ.cs</DependentUpon>
+    <Compile Include="Chuc_vu.Designer.cs">
+      <DependentUpon>Chuc_vu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Công_Nợ_Nhà_Cung_Cấp.cs">
+    <Compile Include="Cong_no_nha_cung_cap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Công_Nợ_Nhà_Cung_Cấp.Designer.cs">
-      <DependentUpon>Công_Nợ_Nhà_Cung_Cấp.cs</DependentUpon>
+    <Compile Include="Cong_no_nha_cung_cap.Designer.cs">
+      <DependentUpon>Cong_no_nha_cung_cap.cs</DependentUpon>
     </Compile>
-    <Compile Include="cập_nhật_Hóa_Đơn.cs">
+    <Compile Include="Cap_nhat_hoa_don.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cập_nhật_chứng_từ.Designer.cs">
-      <DependentUpon>cập_nhật_Hóa_Đơn.cs</DependentUpon>
+    <Compile Include="Cap_nhat_hoa_don.Designer.cs">
+      <DependentUpon>Cap_nhat_hoa_don.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cập_Nhật_Đơn_Hàng.cs">
+    <Compile Include="Cap_nhat_don_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cập_Nhật_Đơn_Hàng.Designer.cs">
-      <DependentUpon>Cập_Nhật_Đơn_Hàng.cs</DependentUpon>
+    <Compile Include="Cap_nhat_don_hang.Designer.cs">
+      <DependentUpon>Cap_nhat_don_hang.cs</DependentUpon>
     </Compile>
     <Compile Include="Dang_nhap.cs">
       <SubType>Form</SubType>
@@ -231,93 +231,93 @@
     <Compile Include="Dang_nhap.Designer.cs">
       <DependentUpon>Dang_nhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danh_Sách_Phiếu_Thu.cs">
+    <Compile Include="Danh_sach_phieu_thu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Danh_Sách_Phiếu_Thu.Designer.cs">
-      <DependentUpon>Danh_Sách_Phiếu_Thu.cs</DependentUpon>
+    <Compile Include="Danh_sach_phieu_thu.Designer.cs">
+      <DependentUpon>Danh_sach_phieu_thu.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="Hàng_SX.cs">
+    <Compile Include="Hang_sx.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hàng_SX.Designer.cs">
-      <DependentUpon>Hàng_SX.cs</DependentUpon>
+    <Compile Include="Hang_sx.Designer.cs">
+      <DependentUpon>Hang_sx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hóa_đơn_bán_hàng.cs">
+    <Compile Include="Hoa_don_ban_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hóa_đơn_bán_hàng.Designer.cs">
-      <DependentUpon>Hóa_đơn_bán_hàng.cs</DependentUpon>
+    <Compile Include="Hoa_don_ban_hang.Designer.cs">
+      <DependentUpon>Hoa_don_ban_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hóa_đơn_nhập_hàng.cs">
+    <Compile Include="Hoa_don-nhap_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hóa_đơn_nhập_hàng.Designer.cs">
-      <DependentUpon>Hóa_đơn_nhập_hàng.cs</DependentUpon>
+    <Compile Include="Hoa_don-nhap_hang.Designer.cs">
+      <DependentUpon>Hoa_don-nhap_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Khách_Hàng.cs">
+    <Compile Include="Khach_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Khách_Hàng.Designer.cs">
-      <DependentUpon>Khách_Hàng.cs</DependentUpon>
+    <Compile Include="Khach_hang.Designer.cs">
+      <DependentUpon>Khach_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Loại_SP.cs">
+    <Compile Include="Loai_SP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loại_SP.Designer.cs">
-      <DependentUpon>Loại_SP.cs</DependentUpon>
+    <Compile Include="Loai_SP.Designer.cs">
+      <DependentUpon>Loai_SP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mặt_hàng.cs">
+    <Compile Include="Mat_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mặt_hàng.Designer.cs">
-      <DependentUpon>Mặt_hàng.cs</DependentUpon>
+    <Compile Include="Mat_hang.Designer.cs">
+      <DependentUpon>Mat_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nhà_Cung_Cấp.cs">
+    <Compile Include="Nha_cung_cap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nhà_Cung_Cấp.Designer.cs">
-      <DependentUpon>Nhà_Cung_Cấp.cs</DependentUpon>
+    <Compile Include="Nha_cung_cap.Designer.cs">
+      <DependentUpon>Nha_cung_cap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nhân_Viên.cs">
+    <Compile Include="Nhap_vien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nhân_Viên.Designer.cs">
-      <DependentUpon>Nhân_Viên.cs</DependentUpon>
+    <Compile Include="Nhap_vien.Designer.cs">
+      <DependentUpon>Nhap_vien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nhóm_Hàng.cs">
+    <Compile Include="Nhom_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nhóm_Hàng.Designer.cs">
-      <DependentUpon>Nhóm_Hàng.cs</DependentUpon>
+    <Compile Include="Nhom_hang.Designer.cs">
+      <DependentUpon>Nhom_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phiếu_Chi.cs">
+    <Compile Include="Phieu_chi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phiếu_Chi.Designer.cs">
-      <DependentUpon>Phiếu_Chi.cs</DependentUpon>
+    <Compile Include="Phieu_chi.Designer.cs">
+      <DependentUpon>Phieu_chi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phiếu_quà_tặng.cs">
+    <Compile Include="Phieu_qua_tang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phiếu_quà_tặng.Designer.cs">
-      <DependentUpon>Phiếu_quà_tặng.cs</DependentUpon>
+    <Compile Include="Phieu_qua_tang.Designer.cs">
+      <DependentUpon>Phieu_qua_tang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Quản_lý_Kho.cs">
+    <Compile Include="Quan_ly_kho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nhâp_Kho.Designer.cs">
-      <DependentUpon>Quản_lý_Kho.cs</DependentUpon>
+    <Compile Include="Quan_ly_kho.Designer.cs">
+      <DependentUpon>Quan_ly_kho.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sản_Phẩm.cs">
+    <Compile Include="San_pham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sản_Phẩm.Designer.cs">
-      <DependentUpon>Sản_Phẩm.cs</DependentUpon>
+    <Compile Include="San_pham.Designer.cs">
+      <DependentUpon>San_pham.cs</DependentUpon>
     </Compile>
     <Compile Include="Trang_Chu.cs">
       <SubType>Form</SubType>
@@ -325,83 +325,83 @@
     <Compile Include="Trang_Chu.Designer.cs">
       <DependentUpon>Trang_Chu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tìm_Kiếm_Hóa_Đơn_bán_hàng.cs">
+    <Compile Include="Tim_kiem_hoa_don_ban_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tìm_Kiếm_Hóa_Đơn_bán_hàng.Designer.cs">
-      <DependentUpon>Tìm_Kiếm_Hóa_Đơn_bán_hàng.cs</DependentUpon>
+    <Compile Include="Tim_kiem_hoa_don_ban_hang.Designer.cs">
+      <DependentUpon>Tim_kiem_hoa_don_ban_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tìm_Kiếm_Phiếu_Nhập_hàng.cs">
+    <Compile Include="Tim_Kiem_phieu_nhap_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tìm_Kiếm_Phiếu_Nhập_hàng.Designer.cs">
-      <DependentUpon>Tìm_Kiếm_Phiếu_Nhập_hàng.cs</DependentUpon>
+    <Compile Include="Tim_Kiem_phieu_nhap_hang.Designer.cs">
+      <DependentUpon>Tim_Kiem_phieu_nhap_hang.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Ban_hang.resx">
       <DependentUpon>Ban_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Báo_Cáo_theo_ngày.resx">
-      <DependentUpon>Báo_Cáo_theo_ngày.cs</DependentUpon>
+    <EmbeddedResource Include="Bao_ccao_theo_ngay.resx">
+      <DependentUpon>Bao_ccao_theo_ngay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Báo_Cáo_theo_nhân_viên.resx">
-      <DependentUpon>Báo_Cáo_theo_nhân_viên.cs</DependentUpon>
+    <EmbeddedResource Include="Bao_cao_theo_nhan_vien.resx">
+      <DependentUpon>Bao_cao_theo_nhan_vien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Báo_Cáo_Theo_tháng.resx">
-      <DependentUpon>Báo_Cáo_Theo_tháng.cs</DependentUpon>
+    <EmbeddedResource Include="Bao_cao_theo_thang.resx">
+      <DependentUpon>Bao_cao_theo_thang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bộ_phận.resx">
-      <DependentUpon>Bộ_phận.cs</DependentUpon>
+    <EmbeddedResource Include="Bo_phan.resx">
+      <DependentUpon>Bo_phan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chức_Vụ.resx">
-      <DependentUpon>Chức_Vụ.cs</DependentUpon>
+    <EmbeddedResource Include="Chuc_vu.resx">
+      <DependentUpon>Chuc_vu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Công_Nợ_Nhà_Cung_Cấp.resx">
-      <DependentUpon>Công_Nợ_Nhà_Cung_Cấp.cs</DependentUpon>
+    <EmbeddedResource Include="Cong_no_nha_cung_cap.resx">
+      <DependentUpon>Cong_no_nha_cung_cap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cập_nhật_chứng_từ.resx">
-      <DependentUpon>cập_nhật_Hóa_Đơn.cs</DependentUpon>
+      <DependentUpon>Cap_nhat_hoa_don.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cập_Nhật_Đơn_Hàng.resx">
-      <DependentUpon>Cập_Nhật_Đơn_Hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Cap_nhat_don_hang.resx">
+      <DependentUpon>Cap_nhat_don_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dang_nhap.resx">
       <DependentUpon>Dang_nhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Danh_Sách_Phiếu_Thu.resx">
-      <DependentUpon>Danh_Sách_Phiếu_Thu.cs</DependentUpon>
+    <EmbeddedResource Include="Danh_sach_phieu_thu.resx">
+      <DependentUpon>Danh_sach_phieu_thu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hàng_SX.resx">
-      <DependentUpon>Hàng_SX.cs</DependentUpon>
+    <EmbeddedResource Include="Hang_sx.resx">
+      <DependentUpon>Hang_sx.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hóa_đơn_bán_hàng.resx">
-      <DependentUpon>Hóa_đơn_bán_hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Hoa_don_ban_hang.resx">
+      <DependentUpon>Hoa_don_ban_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hóa_đơn_nhập_hàng.resx">
-      <DependentUpon>Hóa_đơn_nhập_hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Hoa_don-nhap_hang.resx">
+      <DependentUpon>Hoa_don-nhap_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Khách_Hàng.resx">
-      <DependentUpon>Khách_Hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Khach_hang.resx">
+      <DependentUpon>Khach_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loại_SP.resx">
-      <DependentUpon>Loại_SP.cs</DependentUpon>
+    <EmbeddedResource Include="Loai_SP.resx">
+      <DependentUpon>Loai_SP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mặt_hàng.resx">
-      <DependentUpon>Mặt_hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Mat_hang.resx">
+      <DependentUpon>Mat_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nhà_Cung_Cấp.resx">
-      <DependentUpon>Nhà_Cung_Cấp.cs</DependentUpon>
+    <EmbeddedResource Include="Nha_cung_cap.resx">
+      <DependentUpon>Nha_cung_cap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nhân_Viên.resx">
-      <DependentUpon>Nhân_Viên.cs</DependentUpon>
+    <EmbeddedResource Include="Nhap_vien.resx">
+      <DependentUpon>Nhap_vien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nhóm_Hàng.resx">
-      <DependentUpon>Nhóm_Hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Nhom_hang.resx">
+      <DependentUpon>Nhom_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phiếu_Chi.resx">
-      <DependentUpon>Phiếu_Chi.cs</DependentUpon>
+    <EmbeddedResource Include="Phieu_chi.resx">
+      <DependentUpon>Phieu_chi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phiếu_quà_tặng.resx">
-      <DependentUpon>Phiếu_quà_tặng.cs</DependentUpon>
+    <EmbeddedResource Include="Phieu_qua_tang.resx">
+      <DependentUpon>Phieu_qua_tang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -413,20 +413,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Quản_lý_Kho.resx">
-      <DependentUpon>Quản_lý_Kho.cs</DependentUpon>
+    <EmbeddedResource Include="Quan_ly_kho.resx">
+      <DependentUpon>Quan_ly_kho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sản_Phẩm.resx">
-      <DependentUpon>Sản_Phẩm.cs</DependentUpon>
+    <EmbeddedResource Include="San_pham.resx">
+      <DependentUpon>San_pham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trang_Chu.resx">
       <DependentUpon>Trang_Chu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tìm_Kiếm_Hóa_Đơn_bán_hàng.resx">
-      <DependentUpon>Tìm_Kiếm_Hóa_Đơn_bán_hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Tim_kiem_hoa_don_ban_hang.resx">
+      <DependentUpon>Tim_kiem_hoa_don_ban_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tìm_Kiếm_Phiếu_Nhập_hàng.resx">
-      <DependentUpon>Tìm_Kiếm_Phiếu_Nhập_hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Tim_Kiem_phieu_nhap_hang.resx">
+      <DependentUpon>Tim_Kiem_phieu_nhap_hang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
