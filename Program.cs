@@ -16,8 +16,8 @@ namespace QL_cua_hang_tien_loi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dang_nhap());
-            //Application.Run(new Trang_Chu());
+           
+            Application.Run(new Trang_Chu());
             //Application.Run(new Ban_hang());
         }
     }
