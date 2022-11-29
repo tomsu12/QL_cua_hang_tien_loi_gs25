@@ -159,6 +159,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ban_hang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,24 @@
     <Compile Include="Dang_nhap.Designer.cs">
       <DependentUpon>Dang_nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Danh_muc_khach_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh_muc_khach_hang.Designer.cs">
+      <DependentUpon>Danh_muc_khach_hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danh_muc_NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh_muc_NCC.Designer.cs">
+      <DependentUpon>Danh_muc_NCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danh_Muc_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh_Muc_NhanVien.Designer.cs">
+      <DependentUpon>Danh_Muc_NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Danh_sach_phieu_thu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,11 +293,11 @@
     <Compile Include="Loai_SP.Designer.cs">
       <DependentUpon>Loai_SP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mat_hang.cs">
+    <Compile Include="Danh_muc_mat_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mat_hang.Designer.cs">
-      <DependentUpon>Mat_hang.cs</DependentUpon>
+    <Compile Include="Danh_muc_mat_hang.Designer.cs">
+      <DependentUpon>Danh_muc_mat_hang.cs</DependentUpon>
     </Compile>
     <Compile Include="Nha_cung_cap.cs">
       <SubType>Form</SubType>
@@ -299,6 +323,12 @@
     <Compile Include="Phieu_chi.Designer.cs">
       <DependentUpon>Phieu_chi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Phieu_nhap_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phieu_nhap_hang.Designer.cs">
+      <DependentUpon>Phieu_nhap_hang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phieu_qua_tang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,24 +349,27 @@
     <Compile Include="San_pham.Designer.cs">
       <DependentUpon>San_pham.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tim_kiem_hoa_don.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tim_kiem_hoa_don.Designer.cs">
+      <DependentUpon>Tim_kiem_hoa_don.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trang_Chu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Trang_Chu.Designer.cs">
       <DependentUpon>Trang_Chu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tim_kiem_hoa_don_ban_hang.cs">
+    <Compile Include="Đat_lai_mat_khau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tim_kiem_hoa_don_ban_hang.Designer.cs">
-      <DependentUpon>Tim_kiem_hoa_don_ban_hang.cs</DependentUpon>
+    <Compile Include="Đat_lai_mat_khau.Designer.cs">
+      <DependentUpon>Đat_lai_mat_khau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tim_Kiem_phieu_nhap_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tim_Kiem_phieu_nhap_hang.Designer.cs">
-      <DependentUpon>Tim_Kiem_phieu_nhap_hang.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ban_hang.resx">
       <DependentUpon>Ban_hang.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,6 +400,15 @@
     <EmbeddedResource Include="Dang_nhap.resx">
       <DependentUpon>Dang_nhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Danh_muc_khach_hang.resx">
+      <DependentUpon>Danh_muc_khach_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danh_muc_NCC.resx">
+      <DependentUpon>Danh_muc_NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danh_Muc_NhanVien.resx">
+      <DependentUpon>Danh_Muc_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Danh_sach_phieu_thu.resx">
       <DependentUpon>Danh_sach_phieu_thu.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,8 +427,8 @@
     <EmbeddedResource Include="Loai_SP.resx">
       <DependentUpon>Loai_SP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mat_hang.resx">
-      <DependentUpon>Mat_hang.cs</DependentUpon>
+    <EmbeddedResource Include="Danh_muc_mat_hang.resx">
+      <DependentUpon>Danh_muc_mat_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nha_cung_cap.resx">
       <DependentUpon>Nha_cung_cap.cs</DependentUpon>
@@ -399,6 +441,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Phieu_chi.resx">
       <DependentUpon>Phieu_chi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phieu_nhap_hang.resx">
+      <DependentUpon>Phieu_nhap_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phieu_qua_tang.resx">
       <DependentUpon>Phieu_qua_tang.cs</DependentUpon>
@@ -419,14 +464,14 @@
     <EmbeddedResource Include="San_pham.resx">
       <DependentUpon>San_pham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tim_kiem_hoa_don.resx">
+      <DependentUpon>Tim_kiem_hoa_don.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trang_Chu.resx">
       <DependentUpon>Trang_Chu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tim_kiem_hoa_don_ban_hang.resx">
-      <DependentUpon>Tim_kiem_hoa_don_ban_hang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tim_Kiem_phieu_nhap_hang.resx">
-      <DependentUpon>Tim_Kiem_phieu_nhap_hang.cs</DependentUpon>
+    <EmbeddedResource Include="Đat_lai_mat_khau.resx">
+      <DependentUpon>Đat_lai_mat_khau.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

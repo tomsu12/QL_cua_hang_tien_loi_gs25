@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class Tim_Kiem_phieu_nhap_hang : Form
+    public partial class frmAccount : Form
     {
-        public Tim_Kiem_phieu_nhap_hang()
+        public frmAccount()
         {
             InitializeComponent();
+        }
+
+        private void frmAccount_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

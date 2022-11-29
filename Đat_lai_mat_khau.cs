@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class Tim_kiem_hoa_don_ban_hang : Form
+    public partial class frmDoiMatKhau : Form
     {
-        public Tim_kiem_hoa_don_ban_hang()
+        public frmDoiMatKhau()
         {
             InitializeComponent();
+            
+        }
+
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

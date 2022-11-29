@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class frmDMHDBH : Form
+    public partial class frmDMNCC : Form
     {
-        public frmDMHDBH()
+        public frmDMNCC()
         {
             InitializeComponent();
         }

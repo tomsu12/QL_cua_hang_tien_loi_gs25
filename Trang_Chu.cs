@@ -25,7 +25,16 @@ namespace QL_cua_hang_tien_loi
             tabControl1.ItemSize = new Size(0, 1);
             tabControl1.SizeMode = TabSizeMode.Fixed;
         }
-
+        frmDoiMatKhau formDoiMatKhau;
+        frmAccount formAccount;
+        Danh_Muc_NhanVien formdanh_Muc_NhanVien;
+        frmDMKhachHang formDMKhachHang;
+        frmDMNCC formDMNCC;
+        frmMatHang formDMMH;
+        frmPhieuNhapHang formPhieuNhap;
+        frmDMHDBH formHoaDonBanHang;
+        frmHoaDon formHoaDon;
+        
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
@@ -308,9 +317,7 @@ namespace QL_cua_hang_tien_loi
                 var res = MessageBox.Show("Do you want to logout? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (res == DialogResult.Yes)
                 {
-                    Dang_nhap newLogin = new Dang_nhap();
-                    this.Hide();
-                    newLogin.ShowDialog();
+                    Application.Exit();
                 }
             }
         }
@@ -323,217 +330,6 @@ namespace QL_cua_hang_tien_loi
         private void tabPage7_Click_1(object sender, EventArgs e)
         {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -543,6 +339,160 @@ namespace QL_cua_hang_tien_loi
 
         private void tabPage17_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+                formdanh_Muc_NhanVien = new Danh_Muc_NhanVien();
+                this.Hide();
+                formdanh_Muc_NhanVien.ShowDialog();
+                this.Show();
+            
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttDoimatkhau_Click(object sender, EventArgs e)
+        {
+            formDoiMatKhau = new frmDoiMatKhau();
+            this.Hide();
+            formDoiMatKhau.ShowDialog();
+            // We get here when newform's DialogResult gets set
+            this.Show();
+        }
+
+        private void bttQuanlyacount_Click(object sender, EventArgs e)
+        {
+            formAccount = new frmAccount();
+            this.Hide();
+            formAccount.ShowDialog();
+            this.Show();
+        }
+
+        private void bttThoat_Click(object sender, EventArgs e)
+        {
+            {
+                var res = MessageBox.Show("Do you want to logout? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (res == DialogResult.Yes)
+                {
+                    Dang_nhap newLogin = new Dang_nhap();
+                    this.Hide();
+                    newLogin.ShowDialog();
+                    this.ShowDialog();
+                }
+            }
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            
+                formDMKhachHang = new frmDMKhachHang();
+                this.Hide();
+                formDMKhachHang.ShowDialog();
+                this.Show();
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            
+                formDMNCC = new frmDMNCC();
+                this.Hide();
+                formDMNCC.ShowDialog();
+                this.Show();
+            
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            
+                formDMMH = new frmMatHang();
+                this.Hide();
+                formDMMH.ShowDialog();
+                this.Show();
+            
+        }
+
+        private void bttPhieunhaphang_Click(object sender, EventArgs e)
+        {
+            
+                formPhieuNhap = new frmPhieuNhapHang();
+                this.Hide();
+                formPhieuNhap.ShowDialog();
+                this.Show();
+            
+        }
+        #region MoveNotNeedTaskbar
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+        private void Trang_Chu_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
+        private void Trang_Chu_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+
+        private void Trang_Chu_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+        #endregion-
+
+        private void bttHoadon_Click(object sender, EventArgs e)
+        {
+            formHoaDonBanHang = new frmDMHDBH();
+            this.Hide();
+            formHoaDonBanHang.ShowDialog();
+            this.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            formdanh_Muc_NhanVien = new Danh_Muc_NhanVien();
+            this.Hide();
+            formdanh_Muc_NhanVien.ShowDialog();
+            this.Show();
+            
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            formDMNCC = new frmDMNCC();
+            this.Hide();
+            formDMNCC.ShowDialog();
+            this.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            formDMKhachHang = new frmDMKhachHang();
+            this.Hide();
+            formDMKhachHang.ShowDialog();
+            this.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            formHoaDon = new frmHoaDon();
+            this.Hide();
+            formHoaDon.ShowDialog();
+            this.Show();
+
 
         }
     }

@@ -16,5 +16,18 @@ namespace QL_cua_hang_tien_loi
         {
             InitializeComponent();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            {
+                var res = MessageBox.Show("Do you want to logout? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (res == DialogResult.Yes)
+                {
+                    Dang_nhap newLogin = new Dang_nhap();
+                    this.Hide();
+                    newLogin.ShowDialog();
+                }
+            }
+        }
     }
 }

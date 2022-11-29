@@ -268,6 +268,7 @@ namespace QL_cua_hang_tien_loi
             this.btnThoat.TabIndex = 50;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnExcel
             // 
@@ -357,7 +358,7 @@ namespace QL_cua_hang_tien_loi
             this.label2.TabIndex = 42;
             this.label2.Text = "Người dùng:";
             // 
-            // Báo_Cáo_Theo_tháng
+            // Bao_cao_theo_thang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -382,7 +383,7 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "Báo_Cáo_Theo_tháng";
+            this.Name = "Bao_cao_theo_thang";
             this.Text = "Báo_Cáo_Theo_tháng";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

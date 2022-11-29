@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class frmDMHDBH : Form
+    public partial class frmMatHang : Form
     {
-        public frmDMHDBH()
+        public frmMatHang()
         {
             InitializeComponent();
+        }
+
+        private void frmMatHang_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

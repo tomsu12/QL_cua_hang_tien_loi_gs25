@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class frmDMHDBH : Form
+    public partial class Danh_Muc_NhanVien : Form
     {
-        public frmDMHDBH()
+        public Danh_Muc_NhanVien()
         {
             InitializeComponent();
+        }
+
+        private void danhMụcChứcVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

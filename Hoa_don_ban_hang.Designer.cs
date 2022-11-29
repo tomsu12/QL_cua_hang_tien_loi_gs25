@@ -1,7 +1,7 @@
 ﻿
 namespace QL_cua_hang_tien_loi
 {
-    partial class Hoa_don_ban_hang
+    partial class frmDMHDBH
     {
         /// <summary>
         /// Required designer variable.
@@ -1229,7 +1229,7 @@ namespace QL_cua_hang_tien_loi
             this.label8.TabIndex = 107;
             this.label8.Text = "Thông tin đơn hàng";
             // 
-            // Hóa_đơn_bán_hàng
+            // frmDMHDBH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1243,8 +1243,8 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "Hóa_đơn_bán_hàng";
-            this.Text = "Hóa_đơn_bán_hàng";
+            this.Name = "frmDMHDBH";
+            this.Text = "Hóa Đơn Bán Hàng";
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
