@@ -1,7 +1,7 @@
 ﻿
 namespace QL_cua_hang_tien_loi
 {
-    partial class Phieu_chi
+    partial class frmPhieuThu
     {
         /// <summary>
         /// Required designer variable.
@@ -342,7 +342,7 @@ namespace QL_cua_hang_tien_loi
             this.panel1.Size = new System.Drawing.Size(618, 27);
             this.panel1.TabIndex = 59;
             // 
-            // Phiếu_Chi
+            // frmPhieuThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -373,7 +373,7 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSoChungTuLQ);
             this.Controls.Add(this.panel1);
-            this.Name = "Phiếu_Chi";
+            this.Name = "frmPhieuThu";
             this.Text = "Phiếu_Chi";
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

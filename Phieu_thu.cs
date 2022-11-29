@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QL_cua_hang_tien_loi
 {
-    public partial class Phieu_chi : Form
+    public partial class frmPhieuThu : Form
     {
-        public Phieu_chi()
+        public frmPhieuThu()
         {
             InitializeComponent();
         }

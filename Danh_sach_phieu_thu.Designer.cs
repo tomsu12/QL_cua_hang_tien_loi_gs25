@@ -1,7 +1,7 @@
 ﻿
 namespace QL_cua_hang_tien_loi
 {
-    partial class Danh_sach_phieu_thu
+    partial class frmDanhSachPhieuThu
     {
         /// <summary>
         /// Required designer variable.
@@ -114,7 +114,7 @@ namespace QL_cua_hang_tien_loi
             this.dateTimeTuNgay.Size = new System.Drawing.Size(108, 20);
             this.dateTimeTuNgay.TabIndex = 17;
             // 
-            // Danh_Sách_Phiếu_Thu
+            // frmDanhSachPhieuThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,7 +127,7 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimeDenNgay);
             this.Controls.Add(this.dateTimeTuNgay);
-            this.Name = "Danh_Sách_Phiếu_Thu";
+            this.Name = "frmDanhSachPhieuThu";
             this.Text = "Danh_Sách_Phiếu_Thu";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -171,6 +171,12 @@
     <Compile Include="Ban_hang.Designer.cs">
       <DependentUpon>Ban_hang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bao_Cao_Thong_Ke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bao_Cao_Thong_Ke.Designer.cs">
+      <DependentUpon>Bao_Cao_Thong_Ke.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bao_ccao_theo_ngay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,11 +323,11 @@
     <Compile Include="Nhom_hang.Designer.cs">
       <DependentUpon>Nhom_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phieu_chi.cs">
+    <Compile Include="Phieu_thu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phieu_chi.Designer.cs">
-      <DependentUpon>Phieu_chi.cs</DependentUpon>
+    <Compile Include="Phieu_thu.Designer.cs">
+      <DependentUpon>Phieu_thu.cs</DependentUpon>
     </Compile>
     <Compile Include="Phieu_nhap_hang.cs">
       <SubType>Form</SubType>
@@ -372,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ban_hang.resx">
       <DependentUpon>Ban_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_Cao_Thong_Ke.resx">
+      <DependentUpon>Bao_Cao_Thong_Ke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bao_ccao_theo_ngay.resx">
       <DependentUpon>Bao_ccao_theo_ngay.cs</DependentUpon>
@@ -439,8 +448,8 @@
     <EmbeddedResource Include="Nhom_hang.resx">
       <DependentUpon>Nhom_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phieu_chi.resx">
-      <DependentUpon>Phieu_chi.cs</DependentUpon>
+    <EmbeddedResource Include="Phieu_thu.resx">
+      <DependentUpon>Phieu_thu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phieu_nhap_hang.resx">
       <DependentUpon>Phieu_nhap_hang.cs</DependentUpon>

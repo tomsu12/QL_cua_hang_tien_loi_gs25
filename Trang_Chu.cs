@@ -34,7 +34,10 @@ namespace QL_cua_hang_tien_loi
         frmPhieuNhapHang formPhieuNhap;
         frmDMHDBH formHoaDonBanHang;
         frmHoaDon formHoaDon;
-        
+        frmPhieuThu formPhieuThu ;
+        frmDanhSachPhieuThu formDSPhieuThu;
+        frmBaocaobanhang formBaocaobanhang;
+
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
@@ -267,32 +270,32 @@ namespace QL_cua_hang_tien_loi
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(tabPage1);
+            tabControl1.SelectTab(tpHeThong);
         }
 
         private void bunifuButton1_Click_1(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(tabPage2);
+            tabControl1.SelectTab(tpDanhMuc);
         }
 
         private void bunifuButton4_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(tabPage3);
+            tabControl1.SelectTab(tpNhapLieu);
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(tabPage4);
+            tabControl1.SelectTab(tpTimKiem);
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(tabPage5);
+            tabControl1.SelectTab(tpQuyTien);
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(tabPage6);
+            tabControl1.SelectTab(tpBaoCao);
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -494,6 +497,35 @@ namespace QL_cua_hang_tien_loi
             this.Show();
 
 
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            formPhieuThu = new frmPhieuThu();
+            this.Hide();
+            formPhieuThu.ShowDialog();
+            this.Show();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            formDSPhieuThu = new frmDanhSachPhieuThu();
+            this.Hide();
+            formDSPhieuThu.ShowDialog();
+            this.Show();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            formBaocaobanhang = new frmBaocaobanhang();
+            this.Hide();
+            formBaocaobanhang.ShowDialog();
+            this.Show();
         }
     }
 }

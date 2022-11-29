@@ -30,22 +30,21 @@ namespace QL_cua_hang_tien_loi
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges85 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges86 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges87 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges88 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges89 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges90 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trang_Chu));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tpHeThong = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.bttThoat = new System.Windows.Forms.Button();
             this.bttQuanlyacount = new System.Windows.Forms.Button();
             this.bttDoimatkhau = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tpDanhMuc = new System.Windows.Forms.TabPage();
             this.button24 = new System.Windows.Forms.Button();
             this.bttTrangsau = new System.Windows.Forms.Button();
             this.bttTrangtruoc = new System.Windows.Forms.Button();
@@ -53,13 +52,13 @@ namespace QL_cua_hang_tien_loi
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lblDanhMucDauVao = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tpNhapLieu = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.bttHoadon = new System.Windows.Forms.Button();
             this.bttPhieunhaphang = new System.Windows.Forms.Button();
             this.lblNhapxuathang = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tpTimKiem = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -67,7 +66,7 @@ namespace QL_cua_hang_tien_loi
             this.button12 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tpQuyTien = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
@@ -75,7 +74,7 @@ namespace QL_cua_hang_tien_loi
             this.button16 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tpBaoCao = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.button23 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
@@ -101,12 +100,12 @@ namespace QL_cua_hang_tien_loi
             this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.tpHeThong.SuspendLayout();
+            this.tpDanhMuc.SuspendLayout();
+            this.tpNhapLieu.SuspendLayout();
+            this.tpTimKiem.SuspendLayout();
+            this.tpQuyTien.SuspendLayout();
+            this.tpBaoCao.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,12 +119,12 @@ namespace QL_cua_hang_tien_loi
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tpHeThong);
+            this.tabControl1.Controls.Add(this.tpDanhMuc);
+            this.tabControl1.Controls.Add(this.tpNhapLieu);
+            this.tabControl1.Controls.Add(this.tpTimKiem);
+            this.tabControl1.Controls.Add(this.tpQuyTien);
+            this.tabControl1.Controls.Add(this.tpBaoCao);
             this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(205, 138);
             this.tabControl1.Name = "tabControl1";
@@ -133,20 +132,19 @@ namespace QL_cua_hang_tien_loi
             this.tabControl1.Size = new System.Drawing.Size(818, 432);
             this.tabControl1.TabIndex = 10;
             // 
-            // tabPage1
+            // tpHeThong
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.bttThoat);
-            this.tabPage1.Controls.Add(this.bttQuanlyacount);
-            this.tabPage1.Controls.Add(this.bttDoimatkhau);
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(810, 400);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Hệ thống";
+            this.tpHeThong.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpHeThong.Controls.Add(this.label9);
+            this.tpHeThong.Controls.Add(this.label5);
+            this.tpHeThong.Controls.Add(this.bttQuanlyacount);
+            this.tpHeThong.Controls.Add(this.bttDoimatkhau);
+            this.tpHeThong.Location = new System.Drawing.Point(4, 28);
+            this.tpHeThong.Name = "tpHeThong";
+            this.tpHeThong.Padding = new System.Windows.Forms.Padding(3);
+            this.tpHeThong.Size = new System.Drawing.Size(810, 400);
+            this.tpHeThong.TabIndex = 0;
+            this.tpHeThong.Text = "Hệ thống";
             // 
             // label9
             // 
@@ -169,17 +167,6 @@ namespace QL_cua_hang_tien_loi
             this.label5.Text = "Hệ Thống Quản Lý Của hàng Tiện Lợi";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // bttThoat
-            // 
-            this.bttThoat.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttThoat.Location = new System.Drawing.Point(737, 342);
-            this.bttThoat.Name = "bttThoat";
-            this.bttThoat.Size = new System.Drawing.Size(67, 46);
-            this.bttThoat.TabIndex = 3;
-            this.bttThoat.Text = "Thoát";
-            this.bttThoat.UseVisualStyleBackColor = true;
-            this.bttThoat.Click += new System.EventHandler(this.bttThoat_Click);
-            // 
             // bttQuanlyacount
             // 
             this.bttQuanlyacount.Location = new System.Drawing.Point(500, 208);
@@ -200,24 +187,24 @@ namespace QL_cua_hang_tien_loi
             this.bttDoimatkhau.UseVisualStyleBackColor = true;
             this.bttDoimatkhau.Click += new System.EventHandler(this.bttDoimatkhau_Click);
             // 
-            // tabPage2
+            // tpDanhMuc
             // 
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage2.Controls.Add(this.button24);
-            this.tabPage2.Controls.Add(this.bttTrangsau);
-            this.tabPage2.Controls.Add(this.bttTrangtruoc);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.lblDanhMucDauVao);
-            this.tabPage2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(810, 400);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Danh mục đầu vào";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpDanhMuc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tpDanhMuc.Controls.Add(this.button24);
+            this.tpDanhMuc.Controls.Add(this.bttTrangsau);
+            this.tpDanhMuc.Controls.Add(this.bttTrangtruoc);
+            this.tpDanhMuc.Controls.Add(this.button3);
+            this.tpDanhMuc.Controls.Add(this.button2);
+            this.tpDanhMuc.Controls.Add(this.button1);
+            this.tpDanhMuc.Controls.Add(this.lblDanhMucDauVao);
+            this.tpDanhMuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpDanhMuc.Location = new System.Drawing.Point(4, 28);
+            this.tpDanhMuc.Name = "tpDanhMuc";
+            this.tpDanhMuc.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDanhMuc.Size = new System.Drawing.Size(810, 400);
+            this.tpDanhMuc.TabIndex = 1;
+            this.tpDanhMuc.Text = "Danh mục đầu vào";
+            this.tpDanhMuc.UseVisualStyleBackColor = true;
             // 
             // button24
             // 
@@ -289,21 +276,21 @@ namespace QL_cua_hang_tien_loi
             this.lblDanhMucDauVao.TabIndex = 0;
             this.lblDanhMucDauVao.Text = "Danh Mục Đầu Vào";
             // 
-            // tabPage3
+            // tpNhapLieu
             // 
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.bttHoadon);
-            this.tabPage3.Controls.Add(this.bttPhieunhaphang);
-            this.tabPage3.Controls.Add(this.lblNhapxuathang);
-            this.tabPage3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(810, 400);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Nhập xuất hàng";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tpNhapLieu.Controls.Add(this.button5);
+            this.tpNhapLieu.Controls.Add(this.button4);
+            this.tpNhapLieu.Controls.Add(this.bttHoadon);
+            this.tpNhapLieu.Controls.Add(this.bttPhieunhaphang);
+            this.tpNhapLieu.Controls.Add(this.lblNhapxuathang);
+            this.tpNhapLieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpNhapLieu.Location = new System.Drawing.Point(4, 28);
+            this.tpNhapLieu.Name = "tpNhapLieu";
+            this.tpNhapLieu.Padding = new System.Windows.Forms.Padding(3);
+            this.tpNhapLieu.Size = new System.Drawing.Size(810, 400);
+            this.tpNhapLieu.TabIndex = 2;
+            this.tpNhapLieu.Text = "Nhập xuất hàng";
+            this.tpNhapLieu.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -357,21 +344,21 @@ namespace QL_cua_hang_tien_loi
             this.lblNhapxuathang.TabIndex = 0;
             this.lblNhapxuathang.Text = "Nhập Xuất Hàng";
             // 
-            // tabPage4
+            // tpTimKiem
             // 
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.button15);
-            this.tabPage4.Controls.Add(this.button14);
-            this.tabPage4.Controls.Add(this.button13);
-            this.tabPage4.Controls.Add(this.button12);
-            this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.button6);
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(810, 400);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Tìm Kíếm";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tpTimKiem.Controls.Add(this.label6);
+            this.tpTimKiem.Controls.Add(this.button15);
+            this.tpTimKiem.Controls.Add(this.button14);
+            this.tpTimKiem.Controls.Add(this.button13);
+            this.tpTimKiem.Controls.Add(this.button12);
+            this.tpTimKiem.Controls.Add(this.button7);
+            this.tpTimKiem.Controls.Add(this.button6);
+            this.tpTimKiem.Location = new System.Drawing.Point(4, 28);
+            this.tpTimKiem.Name = "tpTimKiem";
+            this.tpTimKiem.Size = new System.Drawing.Size(810, 400);
+            this.tpTimKiem.TabIndex = 3;
+            this.tpTimKiem.Text = "Tìm Kíếm";
+            this.tpTimKiem.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -443,21 +430,21 @@ namespace QL_cua_hang_tien_loi
             this.button6.Text = "Trang Trước";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // tpQuyTien
             // 
-            this.tabPage5.Controls.Add(this.label7);
-            this.tabPage5.Controls.Add(this.button19);
-            this.tabPage5.Controls.Add(this.button18);
-            this.tabPage5.Controls.Add(this.button17);
-            this.tabPage5.Controls.Add(this.button16);
-            this.tabPage5.Controls.Add(this.button10);
-            this.tabPage5.Controls.Add(this.button8);
-            this.tabPage5.Location = new System.Drawing.Point(4, 28);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(810, 400);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Quỹ tiền mặt";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tpQuyTien.Controls.Add(this.label7);
+            this.tpQuyTien.Controls.Add(this.button19);
+            this.tpQuyTien.Controls.Add(this.button18);
+            this.tpQuyTien.Controls.Add(this.button17);
+            this.tpQuyTien.Controls.Add(this.button16);
+            this.tpQuyTien.Controls.Add(this.button10);
+            this.tpQuyTien.Controls.Add(this.button8);
+            this.tpQuyTien.Location = new System.Drawing.Point(4, 28);
+            this.tpQuyTien.Name = "tpQuyTien";
+            this.tpQuyTien.Size = new System.Drawing.Size(810, 400);
+            this.tpQuyTien.TabIndex = 4;
+            this.tpQuyTien.Text = "Quỹ tiền mặt";
+            this.tpQuyTien.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -475,8 +462,9 @@ namespace QL_cua_hang_tien_loi
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(143, 83);
             this.button19.TabIndex = 12;
-            this.button19.Text = "Danh Sách Phiếu Bán Hàng";
+            this.button19.Text = "Danh Sách Phiếu Thu";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
@@ -484,7 +472,7 @@ namespace QL_cua_hang_tien_loi
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(139, 83);
             this.button18.TabIndex = 11;
-            this.button18.Text = "Danh Sách Phiếu Nhập Hàng";
+            this.button18.Text = "Danh Sách Phiếu Chi";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button17
@@ -493,8 +481,9 @@ namespace QL_cua_hang_tien_loi
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(143, 83);
             this.button17.TabIndex = 10;
-            this.button17.Text = "Phiếu Bán Hàng";
+            this.button17.Text = "Phiếu Thu";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button16
             // 
@@ -502,8 +491,9 @@ namespace QL_cua_hang_tien_loi
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(139, 83);
             this.button16.TabIndex = 9;
-            this.button16.Text = "Phiếu Nhập Hàng";
+            this.button16.Text = "Phiếu Chi";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button10
             // 
@@ -525,21 +515,21 @@ namespace QL_cua_hang_tien_loi
             this.button8.Text = "Trang Sau";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
+            // tpBaoCao
             // 
-            this.tabPage6.Controls.Add(this.label8);
-            this.tabPage6.Controls.Add(this.button23);
-            this.tabPage6.Controls.Add(this.button22);
-            this.tabPage6.Controls.Add(this.button21);
-            this.tabPage6.Controls.Add(this.button20);
-            this.tabPage6.Controls.Add(this.button11);
-            this.tabPage6.Controls.Add(this.button9);
-            this.tabPage6.Location = new System.Drawing.Point(4, 28);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(810, 400);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Báo cáo thống kê";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tpBaoCao.Controls.Add(this.label8);
+            this.tpBaoCao.Controls.Add(this.button23);
+            this.tpBaoCao.Controls.Add(this.button22);
+            this.tpBaoCao.Controls.Add(this.button21);
+            this.tpBaoCao.Controls.Add(this.button20);
+            this.tpBaoCao.Controls.Add(this.button11);
+            this.tpBaoCao.Controls.Add(this.button9);
+            this.tpBaoCao.Location = new System.Drawing.Point(4, 28);
+            this.tpBaoCao.Name = "tpBaoCao";
+            this.tpBaoCao.Size = new System.Drawing.Size(810, 400);
+            this.tpBaoCao.TabIndex = 5;
+            this.tpBaoCao.Text = "Báo cáo thống kê";
+            this.tpBaoCao.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -586,6 +576,7 @@ namespace QL_cua_hang_tien_loi
             this.button20.TabIndex = 9;
             this.button20.Text = "Bán Hàng";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button11
             // 
@@ -666,11 +657,11 @@ namespace QL_cua_hang_tien_loi
             this.bunifuButton6.ColorContrastOnClick = 45;
             this.bunifuButton6.ColorContrastOnHover = 45;
             this.bunifuButton6.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges85.BottomLeft = true;
-            borderEdges85.BottomRight = true;
-            borderEdges85.TopLeft = true;
-            borderEdges85.TopRight = true;
-            this.bunifuButton6.CustomizableEdges = borderEdges85;
+            borderEdges25.BottomLeft = true;
+            borderEdges25.BottomRight = true;
+            borderEdges25.TopLeft = true;
+            borderEdges25.TopRight = true;
+            this.bunifuButton6.CustomizableEdges = borderEdges25;
             this.bunifuButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -756,11 +747,11 @@ namespace QL_cua_hang_tien_loi
             this.bunifuButton4.ColorContrastOnClick = 45;
             this.bunifuButton4.ColorContrastOnHover = 45;
             this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges86.BottomLeft = true;
-            borderEdges86.BottomRight = true;
-            borderEdges86.TopLeft = true;
-            borderEdges86.TopRight = true;
-            this.bunifuButton4.CustomizableEdges = borderEdges86;
+            borderEdges26.BottomLeft = true;
+            borderEdges26.BottomRight = true;
+            borderEdges26.TopLeft = true;
+            borderEdges26.TopRight = true;
+            this.bunifuButton4.CustomizableEdges = borderEdges26;
             this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -846,11 +837,11 @@ namespace QL_cua_hang_tien_loi
             this.bunifuButton5.ColorContrastOnClick = 45;
             this.bunifuButton5.ColorContrastOnHover = 45;
             this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges87.BottomLeft = true;
-            borderEdges87.BottomRight = true;
-            borderEdges87.TopLeft = true;
-            borderEdges87.TopRight = true;
-            this.bunifuButton5.CustomizableEdges = borderEdges87;
+            borderEdges27.BottomLeft = true;
+            borderEdges27.BottomRight = true;
+            borderEdges27.TopLeft = true;
+            borderEdges27.TopRight = true;
+            this.bunifuButton5.CustomizableEdges = borderEdges27;
             this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -936,11 +927,11 @@ namespace QL_cua_hang_tien_loi
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges88.BottomLeft = true;
-            borderEdges88.BottomRight = true;
-            borderEdges88.TopLeft = true;
-            borderEdges88.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges88;
+            borderEdges28.BottomLeft = true;
+            borderEdges28.BottomRight = true;
+            borderEdges28.TopLeft = true;
+            borderEdges28.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges28;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1026,11 +1017,11 @@ namespace QL_cua_hang_tien_loi
             this.bunifuButton3.ColorContrastOnClick = 45;
             this.bunifuButton3.ColorContrastOnHover = 45;
             this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges89.BottomLeft = true;
-            borderEdges89.BottomRight = true;
-            borderEdges89.TopLeft = true;
-            borderEdges89.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges89;
+            borderEdges29.BottomLeft = true;
+            borderEdges29.BottomRight = true;
+            borderEdges29.TopLeft = true;
+            borderEdges29.TopRight = true;
+            this.bunifuButton3.CustomizableEdges = borderEdges29;
             this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1116,11 +1107,11 @@ namespace QL_cua_hang_tien_loi
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges90.BottomLeft = true;
-            borderEdges90.BottomRight = true;
-            borderEdges90.TopLeft = true;
-            borderEdges90.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges90;
+            borderEdges30.BottomLeft = true;
+            borderEdges30.BottomRight = true;
+            borderEdges30.TopLeft = true;
+            borderEdges30.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges30;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1306,18 +1297,18 @@ namespace QL_cua_hang_tien_loi
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Trang_Chu_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Trang_Chu_MouseUp);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.tpHeThong.ResumeLayout(false);
+            this.tpHeThong.PerformLayout();
+            this.tpDanhMuc.ResumeLayout(false);
+            this.tpDanhMuc.PerformLayout();
+            this.tpNhapLieu.ResumeLayout(false);
+            this.tpNhapLieu.PerformLayout();
+            this.tpTimKiem.ResumeLayout(false);
+            this.tpTimKiem.PerformLayout();
+            this.tpQuyTien.ResumeLayout(false);
+            this.tpQuyTien.PerformLayout();
+            this.tpBaoCao.ResumeLayout(false);
+            this.tpBaoCao.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1331,12 +1322,12 @@ namespace QL_cua_hang_tien_loi
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tpHeThong;
+        private System.Windows.Forms.TabPage tpDanhMuc;
+        private System.Windows.Forms.TabPage tpNhapLieu;
+        private System.Windows.Forms.TabPage tpTimKiem;
+        private System.Windows.Forms.TabPage tpQuyTien;
+        private System.Windows.Forms.TabPage tpBaoCao;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
@@ -1353,7 +1344,6 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayThang;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button bttThoat;
         private System.Windows.Forms.Button bttQuanlyacount;
         private System.Windows.Forms.Button bttDoimatkhau;
         private System.Windows.Forms.Button bttTrangtruoc;
