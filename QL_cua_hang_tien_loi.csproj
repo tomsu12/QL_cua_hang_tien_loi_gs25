@@ -453,6 +453,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\QuanluCHTL_drop.sql" />
+    <Content Include="Data\QuanLyCHTL_data.sql" />
+    <Content Include="Data\QuanLYCHTL_table.sql" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
