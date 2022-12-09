@@ -136,6 +136,28 @@
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Core.WinForms, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Base, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Windows, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -146,6 +168,7 @@
     <Reference Include="Syncfusion.Tools.Base, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Tools.Windows, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
@@ -165,71 +188,38 @@
     <Compile Include="Account.Designer.cs">
       <DependentUpon>Account.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ban_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ban_hang.Designer.cs">
-      <DependentUpon>Ban_hang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Bao_Cao_Thong_Ke.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Bao_Cao_Thong_Ke.Designer.cs">
       <DependentUpon>Bao_Cao_Thong_Ke.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bao_ccao_theo_ngay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bao_ccao_theo_ngay.Designer.cs">
-      <DependentUpon>Bao_ccao_theo_ngay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Bao_cao_theo_nhan_vien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bao_cao_theo_nhan_vien.Designer.cs">
-      <DependentUpon>Bao_cao_theo_nhan_vien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Bao_cao_theo_thang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bao_cao_theo_thang.Designer.cs">
-      <DependentUpon>Bao_cao_theo_thang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Bo_phan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bo_phan.Designer.cs">
-      <DependentUpon>Bo_phan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chi_tiet_hoa_don_nhap_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Chi_tiet_hoa_don_nhap_hang.Designer.cs">
-      <DependentUpon>Chi_tiet_hoa_don_nhap_hang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chi_tiet_hoa_dn_ban_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Chi_tiet_hoa_dn_ban_hang.Designer.cs">
-      <DependentUpon>Chi_tiet_hoa_dn_ban_hang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chuc_vu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Chuc_vu.Designer.cs">
-      <DependentUpon>Chuc_vu.cs</DependentUpon>
-    </Compile>
+    <Compile Include="BusinessLayer\BoPhanBLL.cs" />
+    <Compile Include="BusinessLayer\ChiTietHoaDonBHBLL.cs" />
+    <Compile Include="BusinessLayer\ChiTietHoaDonNHBLL.cs" />
+    <Compile Include="BusinessLayer\ChucVuBLL.cs" />
+    <Compile Include="BusinessLayer\HangSXBLL.cs" />
+    <Compile Include="BusinessLayer\HoaDonBanHangBLL.cs" />
+    <Compile Include="BusinessLayer\HoaDonNhapHangBLL.cs" />
+    <Compile Include="BusinessLayer\KhachHangBLL.cs" />
+    <Compile Include="BusinessLayer\LoaiSanPhamBLL.cs" />
+    <Compile Include="BusinessLayer\MatHangBLL.cs" />
+    <Compile Include="BusinessLayer\NhaCungCapBLL.cs" />
+    <Compile Include="BusinessLayer\NhanVienBLL.cs" />
+    <Compile Include="BusinessLayer\NhomHangBLL.cs" />
+    <Compile Include="BusinessLayer\PhieuQuaTangBLL.cs" />
+    <Compile Include="BusinessLayer\UserBLL.cs" />
     <Compile Include="Cong_no_nha_cung_cap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cong_no_nha_cung_cap.Designer.cs">
       <DependentUpon>Cong_no_nha_cung_cap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cap_nhat_hoa_don.cs">
+    <Compile Include="Cap_nhat_phieu_nhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cap_nhat_hoa_don.Designer.cs">
-      <DependentUpon>Cap_nhat_hoa_don.cs</DependentUpon>
+    <Compile Include="Cap_nhat_phieu_nhap.Designer.cs">
+      <DependentUpon>Cap_nhat_phieu_nhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Cap_nhat_don_hang.cs">
       <SubType>Form</SubType>
@@ -261,19 +251,42 @@
     <Compile Include="Danh_Muc_NhanVien.Designer.cs">
       <DependentUpon>Danh_Muc_NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danh_sach_phieu_thu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Danh_sach_phieu_thu.Designer.cs">
-      <DependentUpon>Danh_sach_phieu_thu.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="Hang_sx.cs">
+    <Compile Include="DataLayer\DataAccess.cs" />
+    <Compile Include="DataLayer\SqlHelper.cs" />
+    <Compile Include="Entities\BoPhan.cs" />
+    <Compile Include="Entities\ChiTietHoaDonBH.cs" />
+    <Compile Include="Entities\ChiTietHoaDonNH.cs" />
+    <Compile Include="Entities\ChucVu.cs" />
+    <Compile Include="Entities\CongNoNCC.cs" />
+    <Compile Include="Entities\HangSX.cs" />
+    <Compile Include="Entities\HoaDonBanHang.cs" />
+    <Compile Include="Entities\HoaDonNhapHang.cs" />
+    <Compile Include="Entities\KhachHang.cs" />
+    <Compile Include="Entities\LoaiHoaDon.cs" />
+    <Compile Include="Entities\LoaiSanPham.cs" />
+    <Compile Include="Entities\MatHang.cs" />
+    <Compile Include="Entities\NhaCungCap.cs" />
+    <Compile Include="Entities\NhanVien.cs" />
+    <Compile Include="Entities\NhomHang.cs" />
+    <Compile Include="Entities\NoiDungThuChi.cs" />
+    <Compile Include="Entities\PhieuChi.cs" />
+    <Compile Include="Entities\PhieuQuaTang.cs" />
+    <Compile Include="Entities\PhieuThu.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserLogin.cs" />
+    <Compile Include="frmReportHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hang_sx.Designer.cs">
-      <DependentUpon>Hang_sx.cs</DependentUpon>
+    <Compile Include="frmReportHoaDon.Designer.cs">
+      <DependentUpon>frmReportHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportPhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportPhieuNhapKho.Designer.cs">
+      <DependentUpon>frmReportPhieuNhapKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Hoa_don_ban_hang.cs">
       <SubType>Form</SubType>
@@ -281,53 +294,11 @@
     <Compile Include="Hoa_don_ban_hang.Designer.cs">
       <DependentUpon>Hoa_don_ban_hang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hoa_don-nhap_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hoa_don-nhap_hang.Designer.cs">
-      <DependentUpon>Hoa_don-nhap_hang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Khach_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Khach_hang.Designer.cs">
-      <DependentUpon>Khach_hang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Loai_SP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Loai_SP.Designer.cs">
-      <DependentUpon>Loai_SP.cs</DependentUpon>
-    </Compile>
     <Compile Include="Danh_muc_mat_hang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Danh_muc_mat_hang.Designer.cs">
       <DependentUpon>Danh_muc_mat_hang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nha_cung_cap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nha_cung_cap.Designer.cs">
-      <DependentUpon>Nha_cung_cap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nhap_vien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nhap_vien.Designer.cs">
-      <DependentUpon>Nhap_vien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nhom_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nhom_hang.Designer.cs">
-      <DependentUpon>Nhom_hang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Phieu_thu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Phieu_thu.Designer.cs">
-      <DependentUpon>Phieu_thu.cs</DependentUpon>
     </Compile>
     <Compile Include="Phieu_nhap_hang.cs">
       <SubType>Form</SubType>
@@ -341,6 +312,11 @@
     <Compile Include="Phieu_qua_tang.Designer.cs">
       <DependentUpon>Phieu_qua_tang.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyCuaHangGS25DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangGS25DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Quan_ly_kho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,12 +325,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="San_pham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="San_pham.Designer.cs">
-      <DependentUpon>San_pham.cs</DependentUpon>
-    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Tim_kiem_hoa_don.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,32 +347,14 @@
     <EmbeddedResource Include="Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ban_hang.resx">
-      <DependentUpon>Ban_hang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Bao_Cao_Thong_Ke.resx">
       <DependentUpon>Bao_Cao_Thong_Ke.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bao_ccao_theo_ngay.resx">
-      <DependentUpon>Bao_ccao_theo_ngay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Bao_cao_theo_nhan_vien.resx">
-      <DependentUpon>Bao_cao_theo_nhan_vien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Bao_cao_theo_thang.resx">
-      <DependentUpon>Bao_cao_theo_thang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Bo_phan.resx">
-      <DependentUpon>Bo_phan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Chuc_vu.resx">
-      <DependentUpon>Chuc_vu.cs</DependentUpon>
+    <EmbeddedResource Include="Cap_nhat_phieu_nhap.resx">
+      <DependentUpon>Cap_nhat_phieu_nhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cong_no_nha_cung_cap.resx">
       <DependentUpon>Cong_no_nha_cung_cap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cập_nhật_chứng_từ.resx">
-      <DependentUpon>Cap_nhat_hoa_don.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cap_nhat_don_hang.resx">
       <DependentUpon>Cap_nhat_don_hang.cs</DependentUpon>
@@ -418,38 +371,17 @@
     <EmbeddedResource Include="Danh_Muc_NhanVien.resx">
       <DependentUpon>Danh_Muc_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Danh_sach_phieu_thu.resx">
-      <DependentUpon>Danh_sach_phieu_thu.cs</DependentUpon>
+    <EmbeddedResource Include="frmReportHoaDon.resx">
+      <DependentUpon>frmReportHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hang_sx.resx">
-      <DependentUpon>Hang_sx.cs</DependentUpon>
+    <EmbeddedResource Include="frmReportPhieuNhapKho.resx">
+      <DependentUpon>frmReportPhieuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hoa_don_ban_hang.resx">
       <DependentUpon>Hoa_don_ban_hang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hoa_don-nhap_hang.resx">
-      <DependentUpon>Hoa_don-nhap_hang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Khach_hang.resx">
-      <DependentUpon>Khach_hang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Loai_SP.resx">
-      <DependentUpon>Loai_SP.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Danh_muc_mat_hang.resx">
       <DependentUpon>Danh_muc_mat_hang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nha_cung_cap.resx">
-      <DependentUpon>Nha_cung_cap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nhap_vien.resx">
-      <DependentUpon>Nhap_vien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nhom_hang.resx">
-      <DependentUpon>Nhom_hang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Phieu_thu.resx">
-      <DependentUpon>Phieu_thu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phieu_nhap_hang.resx">
       <DependentUpon>Phieu_nhap_hang.cs</DependentUpon>
@@ -470,9 +402,8 @@
     <EmbeddedResource Include="Quan_ly_kho.resx">
       <DependentUpon>Quan_ly_kho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="San_pham.resx">
-      <DependentUpon>San_pham.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="reportHoaDon.rdlc" />
+    <EmbeddedResource Include="reportPhieuNhapKho.rdlc" />
     <EmbeddedResource Include="Tim_kiem_hoa_don.resx">
       <DependentUpon>Tim_kiem_hoa_don.cs</DependentUpon>
     </EmbeddedResource>
@@ -482,6 +413,7 @@
     <EmbeddedResource Include="Đat_lai_mat_khau.resx">
       <DependentUpon>Đat_lai_mat_khau.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -491,9 +423,49 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanLyCuaHangGS25DataSet.xsc">
+      <DependentUpon>QuanLyCuaHangGS25DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangGS25DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangGS25DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangGS25DataSet.xss">
+      <DependentUpon>QuanLyCuaHangGS25DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{cf2e3667-7ccc-4621-834b-cc1e12cf6e4f}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAO.csproj">
+      <Project>{cb209695-599f-4520-b5d7-12e8466546c1}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{3247db45-57a8-4334-b3ed-427475e99ec8}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

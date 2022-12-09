@@ -37,7 +37,7 @@ namespace QL_cua_hang_tien_loi
             this.label1 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.txtCo = new System.Windows.Forms.TextBox();
-            this.btnXuatRaEcxel = new System.Windows.Forms.Button();
+            this.btnXuatEcxel = new System.Windows.Forms.Button();
             this.btnCLR = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
             this.rdoSua = new System.Windows.Forms.RadioButton();
@@ -154,14 +154,15 @@ namespace QL_cua_hang_tien_loi
             this.txtCo.Size = new System.Drawing.Size(132, 20);
             this.txtCo.TabIndex = 123;
             // 
-            // btnXuatRaEcxel
+            // btnXuatEcxel
             // 
-            this.btnXuatRaEcxel.Location = new System.Drawing.Point(771, 4);
-            this.btnXuatRaEcxel.Name = "btnXuatRaEcxel";
-            this.btnXuatRaEcxel.Size = new System.Drawing.Size(117, 27);
-            this.btnXuatRaEcxel.TabIndex = 50;
-            this.btnXuatRaEcxel.Text = "Export to Excel";
-            this.btnXuatRaEcxel.UseVisualStyleBackColor = true;
+            this.btnXuatEcxel.Location = new System.Drawing.Point(771, 4);
+            this.btnXuatEcxel.Name = "btnXuatEcxel";
+            this.btnXuatEcxel.Size = new System.Drawing.Size(117, 27);
+            this.btnXuatEcxel.TabIndex = 50;
+            this.btnXuatEcxel.Text = "Export to Excel";
+            this.btnXuatEcxel.UseVisualStyleBackColor = true;
+            this.btnXuatEcxel.Click += new System.EventHandler(this.btnXuatExcel_Click);
             // 
             // btnCLR
             // 
@@ -172,6 +173,7 @@ namespace QL_cua_hang_tien_loi
             this.btnCLR.TabIndex = 49;
             this.btnCLR.Text = "CLR";
             this.btnCLR.UseVisualStyleBackColor = true;
+            this.btnCLR.Click += new System.EventHandler(this.btnCLR_Click);
             // 
             // btnOK
             // 
@@ -182,6 +184,7 @@ namespace QL_cua_hang_tien_loi
             this.btnOK.TabIndex = 48;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // rdoSua
             // 
@@ -217,6 +220,7 @@ namespace QL_cua_hang_tien_loi
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(927, 270);
             this.dataGridView1.TabIndex = 116;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // MaNCC
             // 
@@ -295,7 +299,7 @@ namespace QL_cua_hang_tien_loi
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel1.Controls.Add(this.btnXuatRaEcxel);
+            this.panel1.Controls.Add(this.btnXuatEcxel);
             this.panel1.Controls.Add(this.rdoTimKiem);
             this.panel1.Controls.Add(this.btnCLR);
             this.panel1.Controls.Add(this.rdoThem);
@@ -321,6 +325,7 @@ namespace QL_cua_hang_tien_loi
             this.rdoTimKiem.TabStop = true;
             this.rdoTimKiem.Text = "Tìm kiếm";
             this.rdoTimKiem.UseVisualStyleBackColor = true;
+            this.rdoTimKiem.CheckedChanged += new System.EventHandler(this.rdoTimKiem_CheckedChanged);
             // 
             // rdoThem
             // 
@@ -512,6 +517,7 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.label36);
             this.Name = "frmDMNCC";
             this.Text = "Danh Mục Nhà Cung Cấp";
+            this.Load += new System.EventHandler(this.frmDMNCC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -532,7 +538,7 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txtCo;
-        private System.Windows.Forms.Button btnXuatRaEcxel;
+        private System.Windows.Forms.Button btnXuatEcxel;
         private System.Windows.Forms.Button btnCLR;
         private System.Windows.Forms.Button btnOK;
         public System.Windows.Forms.RadioButton rdoSua;

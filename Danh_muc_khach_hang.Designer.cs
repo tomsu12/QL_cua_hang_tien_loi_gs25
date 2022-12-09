@@ -37,28 +37,26 @@ namespace QL_cua_hang_tien_loi
             this.label5 = new System.Windows.Forms.Label();
             this.txtDiemThuong = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtHanMucNo = new System.Windows.Forms.TextBox();
-            this.txtMaSoThue = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtTenKh = new System.Windows.Forms.TextBox();
             this.txtMaKh = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
             this.rdoTimKiem = new System.Windows.Forms.RadioButton();
             this.label38 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.rdoThem = new System.Windows.Forms.RadioButton();
             this.txtSoCMND = new System.Windows.Forms.TextBox();
-            this.txtCo = new System.Windows.Forms.TextBox();
-            this.txtNo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.rdoXoa = new System.Windows.Forms.RadioButton();
+            this.rdoSua = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.MaKhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,17 +64,7 @@ namespace QL_cua_hang_tien_loi
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoCMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSoThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Co = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HanMucNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoDiemThuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnOK = new System.Windows.Forms.Button();
-            this.rdoXoa = new System.Windows.Forms.RadioButton();
-            this.rdoSua = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -102,6 +90,7 @@ namespace QL_cua_hang_tien_loi
             this.btnExportToEcxel.TabIndex = 51;
             this.btnExportToEcxel.Text = "Export to Excel";
             this.btnExportToEcxel.UseVisualStyleBackColor = true;
+            this.btnExportToEcxel.Click += new System.EventHandler(this.btnExportToEcxel_Click);
             // 
             // btnCLR
             // 
@@ -112,6 +101,7 @@ namespace QL_cua_hang_tien_loi
             this.btnCLR.TabIndex = 49;
             this.btnCLR.Text = "CLR";
             this.btnCLR.UseVisualStyleBackColor = true;
+            this.btnCLR.Click += new System.EventHandler(this.btnCLR_Click);
             // 
             // comboGioiTinh
             // 
@@ -143,7 +133,7 @@ namespace QL_cua_hang_tien_loi
             // 
             // txtDiemThuong
             // 
-            this.txtDiemThuong.Location = new System.Drawing.Point(764, 228);
+            this.txtDiemThuong.Location = new System.Drawing.Point(242, 240);
             this.txtDiemThuong.Name = "txtDiemThuong";
             this.txtDiemThuong.ReadOnly = true;
             this.txtDiemThuong.Size = new System.Drawing.Size(100, 20);
@@ -152,27 +142,11 @@ namespace QL_cua_hang_tien_loi
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(672, 230);
+            this.label2.Location = new System.Drawing.Point(102, 240);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 153;
             this.label2.Text = "Điểm thưởng:";
-            // 
-            // txtHanMucNo
-            // 
-            this.txtHanMucNo.Location = new System.Drawing.Point(514, 228);
-            this.txtHanMucNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHanMucNo.Name = "txtHanMucNo";
-            this.txtHanMucNo.Size = new System.Drawing.Size(132, 20);
-            this.txtHanMucNo.TabIndex = 144;
-            // 
-            // txtMaSoThue
-            // 
-            this.txtMaSoThue.Location = new System.Drawing.Point(245, 228);
-            this.txtMaSoThue.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaSoThue.Name = "txtMaSoThue";
-            this.txtMaSoThue.Size = new System.Drawing.Size(117, 20);
-            this.txtMaSoThue.TabIndex = 143;
             // 
             // txtSDT
             // 
@@ -217,16 +191,6 @@ namespace QL_cua_hang_tien_loi
             this.label44.TabIndex = 138;
             this.label44.Text = "Số CMND:";
             // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(408, 233);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(68, 13);
-            this.label42.TabIndex = 137;
-            this.label42.Text = "Hạn mức nợ:";
-            // 
             // rdoTimKiem
             // 
             this.rdoTimKiem.AutoSize = true;
@@ -240,6 +204,7 @@ namespace QL_cua_hang_tien_loi
             this.rdoTimKiem.TabStop = true;
             this.rdoTimKiem.Text = "Tìm kiếm";
             this.rdoTimKiem.UseVisualStyleBackColor = true;
+            this.rdoTimKiem.CheckedChanged += new System.EventHandler(this.rdoTimKiem_CheckedChanged);
             // 
             // label38
             // 
@@ -260,16 +225,6 @@ namespace QL_cua_hang_tien_loi
             this.label36.Size = new System.Drawing.Size(43, 13);
             this.label36.TabIndex = 132;
             this.label36.Text = "Địa chỉ:";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(106, 228);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(63, 13);
-            this.label40.TabIndex = 134;
-            this.label40.Text = "Mã số thuế:";
             // 
             // panel4
             // 
@@ -324,44 +279,6 @@ namespace QL_cua_hang_tien_loi
             this.txtSoCMND.Size = new System.Drawing.Size(132, 20);
             this.txtSoCMND.TabIndex = 150;
             // 
-            // txtCo
-            // 
-            this.txtCo.Location = new System.Drawing.Point(516, 255);
-            this.txtCo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCo.Name = "txtCo";
-            this.txtCo.ReadOnly = true;
-            this.txtCo.Size = new System.Drawing.Size(132, 20);
-            this.txtCo.TabIndex = 152;
-            // 
-            // txtNo
-            // 
-            this.txtNo.Location = new System.Drawing.Point(245, 255);
-            this.txtNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNo.Name = "txtNo";
-            this.txtNo.ReadOnly = true;
-            this.txtNo.Size = new System.Drawing.Size(132, 20);
-            this.txtNo.TabIndex = 151;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(438, 259);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 13);
-            this.label3.TabIndex = 149;
-            this.label3.Text = "Có:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 255);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 13);
-            this.label1.TabIndex = 148;
-            this.label1.Text = "Nợ:";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -374,16 +291,86 @@ namespace QL_cua_hang_tien_loi
             this.SDT,
             this.SoCMND,
             this.SoTaiKhoan,
-            this.MaSoThue,
-            this.No,
-            this.Co,
-            this.HanMucNo,
             this.SoDiemThuong});
             this.dataGridView1.Location = new System.Drawing.Point(40, 325);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(927, 291);
             this.dataGridView1.TabIndex = 146;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.Location = new System.Drawing.Point(26, 633);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(952, 22);
+            this.panel2.TabIndex = 147;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.btnExportToEcxel);
+            this.panel1.Controls.Add(this.rdoTimKiem);
+            this.panel1.Controls.Add(this.btnCLR);
+            this.panel1.Controls.Add(this.rdoThem);
+            this.panel1.Controls.Add(this.btnOK);
+            this.panel1.Controls.Add(this.rdoXoa);
+            this.panel1.Controls.Add(this.rdoSua);
+            this.panel1.Location = new System.Drawing.Point(40, 286);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(927, 38);
+            this.panel1.TabIndex = 145;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(539, 3);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(61, 32);
+            this.btnOK.TabIndex = 48;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // rdoXoa
+            // 
+            this.rdoXoa.AutoSize = true;
+            this.rdoXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoXoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rdoXoa.Location = new System.Drawing.Point(258, 10);
+            this.rdoXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoXoa.Name = "rdoXoa";
+            this.rdoXoa.Size = new System.Drawing.Size(51, 21);
+            this.rdoXoa.TabIndex = 8;
+            this.rdoXoa.TabStop = true;
+            this.rdoXoa.Text = "Xóa";
+            this.rdoXoa.UseVisualStyleBackColor = true;
+            // 
+            // rdoSua
+            // 
+            this.rdoSua.AutoSize = true;
+            this.rdoSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoSua.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rdoSua.Location = new System.Drawing.Point(174, 10);
+            this.rdoSua.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoSua.Name = "rdoSua";
+            this.rdoSua.Size = new System.Drawing.Size(51, 21);
+            this.rdoSua.TabIndex = 7;
+            this.rdoSua.TabStop = true;
+            this.rdoSua.Text = "Sửa";
+            this.rdoSua.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(610, 145);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.TabIndex = 157;
+            this.label6.Text = "Giới tính:";
             // 
             // MaKhach
             // 
@@ -434,113 +421,12 @@ namespace QL_cua_hang_tien_loi
             this.SoTaiKhoan.Name = "SoTaiKhoan";
             this.SoTaiKhoan.ReadOnly = true;
             // 
-            // MaSoThue
-            // 
-            this.MaSoThue.DataPropertyName = "MaSoThue";
-            this.MaSoThue.HeaderText = "Mã số thuế";
-            this.MaSoThue.Name = "MaSoThue";
-            this.MaSoThue.ReadOnly = true;
-            // 
-            // No
-            // 
-            this.No.DataPropertyName = "No";
-            this.No.HeaderText = "Nợ";
-            this.No.Name = "No";
-            this.No.ReadOnly = true;
-            this.No.Width = 50;
-            // 
-            // Co
-            // 
-            this.Co.DataPropertyName = "Co";
-            this.Co.HeaderText = "Có";
-            this.Co.Name = "Co";
-            this.Co.ReadOnly = true;
-            // 
-            // HanMucNo
-            // 
-            this.HanMucNo.DataPropertyName = "HanMucNo";
-            this.HanMucNo.HeaderText = "Hạn mức nợ";
-            this.HanMucNo.Name = "HanMucNo";
-            this.HanMucNo.ReadOnly = true;
-            // 
             // SoDiemThuong
             // 
             this.SoDiemThuong.DataPropertyName = "SoDiemThuong";
             this.SoDiemThuong.HeaderText = "Điểm thưởng";
             this.SoDiemThuong.Name = "SoDiemThuong";
             this.SoDiemThuong.ReadOnly = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.Location = new System.Drawing.Point(26, 633);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(952, 22);
-            this.panel2.TabIndex = 147;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel1.Controls.Add(this.btnExportToEcxel);
-            this.panel1.Controls.Add(this.rdoTimKiem);
-            this.panel1.Controls.Add(this.btnCLR);
-            this.panel1.Controls.Add(this.rdoThem);
-            this.panel1.Controls.Add(this.btnOK);
-            this.panel1.Controls.Add(this.rdoXoa);
-            this.panel1.Controls.Add(this.rdoSua);
-            this.panel1.Location = new System.Drawing.Point(40, 286);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(927, 38);
-            this.panel1.TabIndex = 145;
-            // 
-            // btnOK
-            // 
-            this.btnOK.Location = new System.Drawing.Point(539, 3);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(61, 32);
-            this.btnOK.TabIndex = 48;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
-            // 
-            // rdoXoa
-            // 
-            this.rdoXoa.AutoSize = true;
-            this.rdoXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoXoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rdoXoa.Location = new System.Drawing.Point(258, 10);
-            this.rdoXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.rdoXoa.Name = "rdoXoa";
-            this.rdoXoa.Size = new System.Drawing.Size(51, 21);
-            this.rdoXoa.TabIndex = 8;
-            this.rdoXoa.TabStop = true;
-            this.rdoXoa.Text = "Xóa";
-            this.rdoXoa.UseVisualStyleBackColor = true;
-            // 
-            // rdoSua
-            // 
-            this.rdoSua.AutoSize = true;
-            this.rdoSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoSua.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rdoSua.Location = new System.Drawing.Point(174, 10);
-            this.rdoSua.Margin = new System.Windows.Forms.Padding(4);
-            this.rdoSua.Name = "rdoSua";
-            this.rdoSua.Size = new System.Drawing.Size(51, 21);
-            this.rdoSua.TabIndex = 7;
-            this.rdoSua.TabStop = true;
-            this.rdoSua.Text = "Sửa";
-            this.rdoSua.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(610, 145);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 157;
-            this.label6.Text = "Giới tính:";
             // 
             // frmDMKhachHang
             // 
@@ -553,25 +439,17 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDiemThuong);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtHanMucNo);
-            this.Controls.Add(this.txtMaSoThue);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.txtTenKh);
             this.Controls.Add(this.txtMaKh);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.label42);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.label40);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtSoCMND);
-            this.Controls.Add(this.txtCo);
-            this.Controls.Add(this.txtNo);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -579,6 +457,7 @@ namespace QL_cua_hang_tien_loi
             this.Name = "frmDMKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Mục Khách Hàng";
+            this.Load += new System.EventHandler(this.frmDMKhachHang_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -599,28 +478,26 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDiemThuong;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtHanMucNo;
-        private System.Windows.Forms.TextBox txtMaSoThue;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtTenKh;
         private System.Windows.Forms.TextBox txtMaKh;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label42;
         public System.Windows.Forms.RadioButton rdoTimKiem;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label27;
         public System.Windows.Forms.RadioButton rdoThem;
         private System.Windows.Forms.TextBox txtSoCMND;
-        private System.Windows.Forms.TextBox txtCo;
-        private System.Windows.Forms.TextBox txtNo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnOK;
+        public System.Windows.Forms.RadioButton rdoXoa;
+        public System.Windows.Forms.RadioButton rdoSua;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKhach;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKhach;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
@@ -628,16 +505,6 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCMND;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTaiKhoan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSoThue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn No;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Co;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HanMucNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoDiemThuong;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnOK;
-        public System.Windows.Forms.RadioButton rdoXoa;
-        public System.Windows.Forms.RadioButton rdoSua;
-        private System.Windows.Forms.Label label6;
     }
 }

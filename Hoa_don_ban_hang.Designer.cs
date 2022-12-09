@@ -48,14 +48,9 @@ namespace QL_cua_hang_tien_loi
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dateTimeNgayGH = new System.Windows.Forms.DateTimePicker();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.comboLoaiDonHang = new System.Windows.Forms.ComboBox();
             this.txtDiaChiGiaoHang = new System.Windows.Forms.TextBox();
             this.lblconlai = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.lblNoPhaiTra = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -66,7 +61,6 @@ namespace QL_cua_hang_tien_loi
             this.txtThanhToan = new System.Windows.Forms.TextBox();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChietKhauMatHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblCo = new System.Windows.Forms.Label();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,14 +69,10 @@ namespace QL_cua_hang_tien_loi
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblNo = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.lblSoDiemThuong = new System.Windows.Forms.Label();
-            this.lblSoChungTu = new System.Windows.Forms.Label();
+            this.lblSoHoaDon = new System.Windows.Forms.Label();
             this.lblNgayThang = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -114,8 +104,6 @@ namespace QL_cua_hang_tien_loi
             this.label11 = new System.Windows.Forms.Label();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtMaSoThue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboNhanVien = new System.Windows.Forms.ComboBox();
@@ -147,6 +135,7 @@ namespace QL_cua_hang_tien_loi
             this.txtGiaTriPhieu.Size = new System.Drawing.Size(122, 20);
             this.txtGiaTriPhieu.TabIndex = 139;
             this.txtGiaTriPhieu.Text = "0";
+            this.txtGiaTriPhieu.TextChanged += new System.EventHandler(this.txtGiaTriPhieu_TextChanged);
             // 
             // label35
             // 
@@ -165,6 +154,8 @@ namespace QL_cua_hang_tien_loi
             this.txtSoPhieuQT.Name = "txtSoPhieuQT";
             this.txtSoPhieuQT.Size = new System.Drawing.Size(157, 20);
             this.txtSoPhieuQT.TabIndex = 138;
+            this.txtSoPhieuQT.TextChanged += new System.EventHandler(this.txtSoPhieuQT_TextChanged);
+            this.txtSoPhieuQT.Leave += new System.EventHandler(this.txtSoPhieuQT_Leave);
             // 
             // label9
             // 
@@ -218,6 +209,7 @@ namespace QL_cua_hang_tien_loi
             this.txtTongPhaiTra.Size = new System.Drawing.Size(157, 22);
             this.txtTongPhaiTra.TabIndex = 134;
             this.txtTongPhaiTra.Text = "0";
+            this.txtTongPhaiTra.TextChanged += new System.EventHandler(this.txtTongPhaiTra_TextChanged);
             // 
             // txtChietkhauHD
             // 
@@ -229,6 +221,7 @@ namespace QL_cua_hang_tien_loi
             this.txtChietkhauHD.Size = new System.Drawing.Size(157, 22);
             this.txtChietkhauHD.TabIndex = 136;
             this.txtChietkhauHD.Text = "0";
+            this.txtChietkhauHD.TextChanged += new System.EventHandler(this.txtChietkhauHD_TextChanged);
             // 
             // txtTienHang
             // 
@@ -240,6 +233,7 @@ namespace QL_cua_hang_tien_loi
             this.txtTienHang.Size = new System.Drawing.Size(157, 22);
             this.txtTienHang.TabIndex = 135;
             this.txtTienHang.Text = "0";
+            this.txtTienHang.TextChanged += new System.EventHandler(this.txtTienHang_TextChanged);
             // 
             // label16
             // 
@@ -351,46 +345,6 @@ namespace QL_cua_hang_tien_loi
             this.panel6.Size = new System.Drawing.Size(994, 16);
             this.panel6.TabIndex = 141;
             // 
-            // dateTimeNgayGH
-            // 
-            this.dateTimeNgayGH.CustomFormat = "dd/mm/yyyy";
-            this.dateTimeNgayGH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeNgayGH.Location = new System.Drawing.Point(661, 91);
-            this.dateTimeNgayGH.Name = "dateTimeNgayGH";
-            this.dateTimeNgayGH.Size = new System.Drawing.Size(113, 22);
-            this.dateTimeNgayGH.TabIndex = 113;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(548, 94);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(107, 16);
-            this.label31.TabIndex = 112;
-            this.label31.Text = "Ngày giao hàng:";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(14, 16);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(89, 16);
-            this.label32.TabIndex = 116;
-            this.label32.Text = "Loại hóa đơn:";
-            // 
-            // comboLoaiDonHang
-            // 
-            this.comboLoaiDonHang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboLoaiDonHang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboLoaiDonHang.FormattingEnabled = true;
-            this.comboLoaiDonHang.Items.AddRange(new object[] {
-            "Bán lẻ(XQ)",
-            "Bán lẻ(GH)"});
-            this.comboLoaiDonHang.Location = new System.Drawing.Point(105, 8);
-            this.comboLoaiDonHang.Name = "comboLoaiDonHang";
-            this.comboLoaiDonHang.Size = new System.Drawing.Size(121, 24);
-            this.comboLoaiDonHang.TabIndex = 115;
-            // 
             // txtDiaChiGiaoHang
             // 
             this.txtDiaChiGiaoHang.Location = new System.Drawing.Point(461, 116);
@@ -409,6 +363,7 @@ namespace QL_cua_hang_tien_loi
             this.lblconlai.Size = new System.Drawing.Size(21, 24);
             this.lblconlai.TabIndex = 122;
             this.lblconlai.Text = "0";
+            this.lblconlai.TextChanged += new System.EventHandler(this.lblconlai_TextChanged);
             // 
             // label30
             // 
@@ -418,15 +373,6 @@ namespace QL_cua_hang_tien_loi
             this.label30.Size = new System.Drawing.Size(114, 16);
             this.label30.TabIndex = 111;
             this.label30.Text = "Địa chỉ giao hàng:";
-            // 
-            // lblNoPhaiTra
-            // 
-            this.lblNoPhaiTra.AutoSize = true;
-            this.lblNoPhaiTra.Location = new System.Drawing.Point(82, 89);
-            this.lblNoPhaiTra.Name = "lblNoPhaiTra";
-            this.lblNoPhaiTra.Size = new System.Drawing.Size(15, 16);
-            this.lblNoPhaiTra.TabIndex = 124;
-            this.lblNoPhaiTra.Text = "0";
             // 
             // panel5
             // 
@@ -456,6 +402,7 @@ namespace QL_cua_hang_tien_loi
             this.btnThoat.TabIndex = 121;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnTimKiem
             // 
@@ -467,6 +414,7 @@ namespace QL_cua_hang_tien_loi
             this.btnTimKiem.TabIndex = 120;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnLuu
             // 
@@ -478,6 +426,7 @@ namespace QL_cua_hang_tien_loi
             this.btnLuu.TabIndex = 119;
             this.btnLuu.Text = "Lưu và In";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuy
             // 
@@ -489,6 +438,7 @@ namespace QL_cua_hang_tien_loi
             this.btnHuy.TabIndex = 118;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // label24
             // 
@@ -522,6 +472,7 @@ namespace QL_cua_hang_tien_loi
             this.txtThanhToan.Size = new System.Drawing.Size(187, 29);
             this.txtThanhToan.TabIndex = 117;
             this.txtThanhToan.Text = "0";
+            this.txtThanhToan.TextChanged += new System.EventHandler(this.txtThanhToan_TextChanged);
             // 
             // ThanhTien
             // 
@@ -537,15 +488,6 @@ namespace QL_cua_hang_tien_loi
             this.ChietKhauMatHang.Name = "ChietKhauMatHang";
             this.ChietKhauMatHang.ReadOnly = true;
             this.ChietKhauMatHang.Width = 50;
-            // 
-            // lblCo
-            // 
-            this.lblCo.AutoSize = true;
-            this.lblCo.Location = new System.Drawing.Point(82, 62);
-            this.lblCo.Name = "lblCo";
-            this.lblCo.Size = new System.Drawing.Size(15, 16);
-            this.lblCo.TabIndex = 123;
-            this.lblCo.Text = "0";
             // 
             // SoLuong
             // 
@@ -611,8 +553,9 @@ namespace QL_cua_hang_tien_loi
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(670, 256);
+            this.dataGridView1.Size = new System.Drawing.Size(663, 256);
             this.dataGridView1.TabIndex = 144;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_RowEnter);
             // 
             // GiaBan
             // 
@@ -621,64 +564,23 @@ namespace QL_cua_hang_tien_loi
             this.GiaBan.Name = "GiaBan";
             this.GiaBan.ReadOnly = true;
             // 
-            // lblNo
-            // 
-            this.lblNo.AutoSize = true;
-            this.lblNo.Location = new System.Drawing.Point(82, 35);
-            this.lblNo.Name = "lblNo";
-            this.lblNo.Size = new System.Drawing.Size(15, 16);
-            this.lblNo.TabIndex = 122;
-            this.lblNo.Text = "0";
-            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel9.Controls.Add(this.lblNoPhaiTra);
-            this.panel9.Controls.Add(this.lblCo);
-            this.panel9.Controls.Add(this.lblNo);
-            this.panel9.Controls.Add(this.label38);
-            this.panel9.Controls.Add(this.label37);
-            this.panel9.Controls.Add(this.label36);
             this.panel9.Controls.Add(this.label33);
             this.panel9.Controls.Add(this.lblSoDiemThuong);
-            this.panel9.Location = new System.Drawing.Point(816, -1);
+            this.panel9.Location = new System.Drawing.Point(813, -1);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(176, 133);
+            this.panel9.Size = new System.Drawing.Size(185, 59);
             this.panel9.TabIndex = 119;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 89);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(76, 16);
-            this.label38.TabIndex = 121;
-            this.label38.Text = "Nợ phải trả:";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(6, 62);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(28, 16);
-            this.label37.TabIndex = 120;
-            this.label37.Text = "Có:";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 35);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(29, 16);
-            this.label36.TabIndex = 119;
-            this.label36.Text = "Nợ:";
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.Red;
-            this.label33.Location = new System.Drawing.Point(3, 12);
+            this.label33.Location = new System.Drawing.Point(20, 17);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(119, 16);
             this.label33.TabIndex = 117;
@@ -689,30 +591,30 @@ namespace QL_cua_hang_tien_loi
             this.lblSoDiemThuong.AutoSize = true;
             this.lblSoDiemThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoDiemThuong.ForeColor = System.Drawing.Color.Red;
-            this.lblSoDiemThuong.Location = new System.Drawing.Point(128, 12);
+            this.lblSoDiemThuong.Location = new System.Drawing.Point(145, 19);
             this.lblSoDiemThuong.Name = "lblSoDiemThuong";
             this.lblSoDiemThuong.Size = new System.Drawing.Size(16, 16);
             this.lblSoDiemThuong.TabIndex = 118;
             this.lblSoDiemThuong.Text = "0";
             // 
-            // lblSoChungTu
+            // lblSoHoaDon
             // 
-            this.lblSoChungTu.AutoSize = true;
-            this.lblSoChungTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoChungTu.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblSoChungTu.Location = new System.Drawing.Point(697, 12);
-            this.lblSoChungTu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSoChungTu.Name = "lblSoChungTu";
-            this.lblSoChungTu.Size = new System.Drawing.Size(64, 16);
-            this.lblSoChungTu.TabIndex = 110;
-            this.lblSoChungTu.Text = "_______";
+            this.lblSoHoaDon.AutoSize = true;
+            this.lblSoHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoHoaDon.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblSoHoaDon.Location = new System.Drawing.Point(601, 4);
+            this.lblSoHoaDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSoHoaDon.Name = "lblSoHoaDon";
+            this.lblSoHoaDon.Size = new System.Drawing.Size(64, 16);
+            this.lblSoHoaDon.TabIndex = 110;
+            this.lblSoHoaDon.Text = "_______";
             // 
             // lblNgayThang
             // 
             this.lblNgayThang.AutoSize = true;
             this.lblNgayThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgayThang.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblNgayThang.Location = new System.Drawing.Point(520, 12);
+            this.lblNgayThang.Location = new System.Drawing.Point(424, 4);
             this.lblNgayThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNgayThang.Name = "lblNgayThang";
             this.lblNgayThang.Size = new System.Drawing.Size(64, 16);
@@ -724,7 +626,7 @@ namespace QL_cua_hang_tien_loi
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblUser.Location = new System.Drawing.Point(345, 12);
+            this.lblUser.Location = new System.Drawing.Point(249, 4);
             this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(64, 16);
@@ -769,7 +671,7 @@ namespace QL_cua_hang_tien_loi
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label12.Location = new System.Drawing.Point(418, 12);
+            this.label12.Location = new System.Drawing.Point(322, 4);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(91, 16);
@@ -796,6 +698,8 @@ namespace QL_cua_hang_tien_loi
             this.comboMaHang.Name = "comboMaHang";
             this.comboMaHang.Size = new System.Drawing.Size(198, 21);
             this.comboMaHang.TabIndex = 123;
+            this.comboMaHang.SelectedIndexChanged += new System.EventHandler(this.comboMaHang_SelectedIndexChanged);
+            this.comboMaHang.Leave += new System.EventHandler(this.comboMaHang_Leave);
             // 
             // panel4
             // 
@@ -833,6 +737,7 @@ namespace QL_cua_hang_tien_loi
             this.comboLoHang.Name = "comboLoHang";
             this.comboLoHang.Size = new System.Drawing.Size(49, 21);
             this.comboLoHang.TabIndex = 122;
+            this.comboLoHang.TextChanged += new System.EventHandler(this.comboLoHang_TextChanged);
             // 
             // label29
             // 
@@ -867,6 +772,7 @@ namespace QL_cua_hang_tien_loi
             this.btnCLR.TabIndex = 118;
             this.btnCLR.Text = "CLR";
             this.btnCLR.UseVisualStyleBackColor = true;
+            this.btnCLR.Click += new System.EventHandler(this.btnCLR_Click);
             // 
             // btnDeleteTB
             // 
@@ -878,6 +784,7 @@ namespace QL_cua_hang_tien_loi
             this.btnDeleteTB.TabIndex = 117;
             this.btnDeleteTB.Text = "Delete";
             this.btnDeleteTB.UseVisualStyleBackColor = true;
+            this.btnDeleteTB.Click += new System.EventHandler(this.btnDeleteTB_Click);
             // 
             // label22
             // 
@@ -900,6 +807,7 @@ namespace QL_cua_hang_tien_loi
             this.btnUpdateTB.TabIndex = 116;
             this.btnUpdateTB.Text = "Update";
             this.btnUpdateTB.UseVisualStyleBackColor = true;
+            this.btnUpdateTB.Click += new System.EventHandler(this.btnUpdateTB_Click);
             // 
             // btnInsertTB
             // 
@@ -911,6 +819,7 @@ namespace QL_cua_hang_tien_loi
             this.btnInsertTB.TabIndex = 115;
             this.btnInsertTB.Text = "Insert";
             this.btnInsertTB.UseVisualStyleBackColor = true;
+            this.btnInsertTB.Click += new System.EventHandler(this.btnInsertTB_Click);
             // 
             // txtChietKhau
             // 
@@ -920,6 +829,7 @@ namespace QL_cua_hang_tien_loi
             this.txtChietKhau.Name = "txtChietKhau";
             this.txtChietKhau.Size = new System.Drawing.Size(60, 22);
             this.txtChietKhau.TabIndex = 114;
+            this.txtChietKhau.TextChanged += new System.EventHandler(this.txtChietKhau_TextChanged);
             // 
             // txtSoLuong
             // 
@@ -929,6 +839,7 @@ namespace QL_cua_hang_tien_loi
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(132, 22);
             this.txtSoLuong.TabIndex = 114;
+            this.txtSoLuong.Leave += new System.EventHandler(this.txtSoLuong_Leave);
             // 
             // txtDonGia
             // 
@@ -1032,7 +943,7 @@ namespace QL_cua_hang_tien_loi
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label11.Location = new System.Drawing.Point(245, 12);
+            this.label11.Location = new System.Drawing.Point(149, 4);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 16);
@@ -1053,39 +964,19 @@ namespace QL_cua_hang_tien_loi
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(668, 42);
+            this.label5.Location = new System.Drawing.Point(347, 94);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 16);
             this.label5.TabIndex = 108;
             this.label5.Text = "SĐT:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(345, 94);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 16);
-            this.label6.TabIndex = 108;
-            this.label6.Text = "Mã số thuế:";
-            // 
-            // txtMaSoThue
-            // 
-            this.txtMaSoThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaSoThue.Location = new System.Drawing.Point(449, 91);
-            this.txtMaSoThue.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaSoThue.Name = "txtMaSoThue";
-            this.txtMaSoThue.Size = new System.Drawing.Size(80, 22);
-            this.txtMaSoThue.TabIndex = 108;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(613, 12);
+            this.label1.Location = new System.Drawing.Point(517, 4);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 16);
@@ -1110,6 +1001,8 @@ namespace QL_cua_hang_tien_loi
             this.comboNhanVien.Name = "comboNhanVien";
             this.comboNhanVien.Size = new System.Drawing.Size(121, 24);
             this.comboNhanVien.TabIndex = 120;
+            this.comboNhanVien.TextChanged += new System.EventHandler(this.comboNhanVien_TextChanged);
+            this.comboNhanVien.Leave += new System.EventHandler(this.comboNhanVien_Leave);
             // 
             // panel3
             // 
@@ -1138,13 +1031,9 @@ namespace QL_cua_hang_tien_loi
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.comboNhanVien);
             this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.label32);
-            this.panel1.Controls.Add(this.comboLoaiDonHang);
             this.panel1.Controls.Add(this.txtDiaChiGiaoHang);
-            this.panel1.Controls.Add(this.dateTimeNgayGH);
-            this.panel1.Controls.Add(this.label31);
             this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.lblSoChungTu);
+            this.panel1.Controls.Add(this.lblSoHoaDon);
             this.panel1.Controls.Add(this.lblNgayThang);
             this.panel1.Controls.Add(this.lblUser);
             this.panel1.Controls.Add(this.label7);
@@ -1157,8 +1046,6 @@ namespace QL_cua_hang_tien_loi
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtMaSoThue);
             this.panel1.Controls.Add(this.txtMaKh);
             this.panel1.Controls.Add(this.txtSDT);
             this.panel1.Controls.Add(this.txtTenKh);
@@ -1178,14 +1065,16 @@ namespace QL_cua_hang_tien_loi
             this.txtMaKh.Name = "txtMaKh";
             this.txtMaKh.Size = new System.Drawing.Size(171, 22);
             this.txtMaKh.TabIndex = 108;
+            this.txtMaKh.TextChanged += new System.EventHandler(this.txtMaKh_TextChanged);
+            this.txtMaKh.Leave += new System.EventHandler(this.txtMaKh_Leave);
             // 
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(711, 39);
+            this.txtSDT.Location = new System.Drawing.Point(449, 91);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(95, 22);
+            this.txtSDT.Size = new System.Drawing.Size(167, 22);
             this.txtSDT.TabIndex = 108;
             // 
             // txtTenKh
@@ -1245,6 +1134,7 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.panel2);
             this.Name = "frmDMHDBH";
             this.Text = "Hóa Đơn Bán Hàng";
+            this.Load += new System.EventHandler(this.frmHoaDonBanHang_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1287,14 +1177,9 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DateTimePicker dateTimeNgayGH;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ComboBox comboLoaiDonHang;
         private System.Windows.Forms.TextBox txtDiaChiGiaoHang;
         private System.Windows.Forms.Label lblconlai;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label lblNoPhaiTra;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnTimKiem;
@@ -1305,7 +1190,6 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.TextBox txtThanhToan;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn ChietKhauMatHang;
-        private System.Windows.Forms.Label lblCo;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLo;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
@@ -1314,14 +1198,10 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
-        private System.Windows.Forms.Label lblNo;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label lblSoDiemThuong;
-        private System.Windows.Forms.Label lblSoChungTu;
+        private System.Windows.Forms.Label lblSoHoaDon;
         private System.Windows.Forms.Label lblNgayThang;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label7;
@@ -1353,8 +1233,6 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtMaSoThue;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboNhanVien;

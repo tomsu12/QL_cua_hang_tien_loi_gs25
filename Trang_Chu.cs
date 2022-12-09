@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QL_cua_hang_tien_loi.DataLayer;
+using QL_cua_hang_tien_loi.Entities;
+using QL_cua_hang_tien_loi.BusinessLayer;
+
 
 namespace QL_cua_hang_tien_loi
 {
@@ -33,10 +37,13 @@ namespace QL_cua_hang_tien_loi
         frmMatHang formDMMH;
         frmPhieuNhapHang formPhieuNhap;
         frmDMHDBH formHoaDonBanHang;
-        frmHoaDon formHoaDon;
-        frmPhieuThu formPhieuThu ;
-        frmDanhSachPhieuThu formDSPhieuThu;
+        frmTimKiem formTimKiem;
         frmBaocaobanhang formBaocaobanhang;
+        frmPhieuQuaTang formPhieuQuaTang;
+        frmCongNoNCC formCongNoNCC;
+
+        User us = new User();
+        UserBLL bllUser = new UserBLL();
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
@@ -55,7 +62,21 @@ namespace QL_cua_hang_tien_loi
 
         private void Trang_Chu_Load(object sender, EventArgs e)
         {
-
+            label4.Text = Dang_nhap.name;
+            if(SqlHelper.Role == 2)
+            {
+                this.bunifuButton2.Enabled = false;
+                this.bttHoadon.Enabled = false;
+                this.bttDoimatkhau.Enabled = false;
+                this.bttQuanlyacount.Enabled = false;
+            }
+            if (SqlHelper.Role == 3)
+            {
+                this.bunifuButton2.Enabled = false;
+                this.bttPhieunhaphang.Enabled = false;
+                this.bttDoimatkhau.Enabled = false;
+                this.bttQuanlyacount.Enabled = false;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -290,7 +311,6 @@ namespace QL_cua_hang_tien_loi
 
         private void bunifuButton6_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectTab(tpQuyTien);
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
@@ -491,9 +511,9 @@ namespace QL_cua_hang_tien_loi
 
         private void button15_Click(object sender, EventArgs e)
         {
-            formHoaDon = new frmHoaDon();
+            formTimKiem = new frmTimKiem();
             this.Hide();
-            formHoaDon.ShowDialog();
+            formTimKiem.ShowDialog();
             this.Show();
 
 
@@ -506,18 +526,10 @@ namespace QL_cua_hang_tien_loi
 
         private void button17_Click(object sender, EventArgs e)
         {
-            formPhieuThu = new frmPhieuThu();
-            this.Hide();
-            formPhieuThu.ShowDialog();
-            this.Show();
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            formDSPhieuThu = new frmDanhSachPhieuThu();
-            this.Hide();
-            formDSPhieuThu.ShowDialog();
-            this.Show();
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -525,6 +537,27 @@ namespace QL_cua_hang_tien_loi
             formBaocaobanhang = new frmBaocaobanhang();
             this.Hide();
             formBaocaobanhang.ShowDialog();
+            this.Show();
+        }
+
+        private void bttTrangtruoc_Click(object sender, EventArgs e)
+        {
+            //this.tpHeThong();
+        }
+
+        private void bunifuButton6_Click_1(object sender, EventArgs e)
+        {
+            formPhieuQuaTang = new frmPhieuQuaTang();
+            this.Hide();
+            formPhieuQuaTang.ShowDialog();
+            this.Show();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            formCongNoNCC = new frmCongNoNCC();
+            this.Hide();
+            formCongNoNCC.ShowDialog();
             this.Show();
         }
     }

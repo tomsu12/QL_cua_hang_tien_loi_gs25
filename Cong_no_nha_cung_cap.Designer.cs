@@ -1,7 +1,7 @@
 ﻿
 namespace QL_cua_hang_tien_loi
 {
-    partial class Cong_no_nha_cung_cap
+    partial class frmCongNoNCC
     {
         /// <summary>
         /// Required designer variable.
@@ -176,6 +176,7 @@ namespace QL_cua_hang_tien_loi
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(904, 140);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // panel7
             // 
@@ -353,6 +354,7 @@ namespace QL_cua_hang_tien_loi
             this.comboNhaCC.Name = "comboNhaCC";
             this.comboNhaCC.Size = new System.Drawing.Size(374, 21);
             this.comboNhaCC.TabIndex = 14;
+            this.comboNhaCC.TextChanged += new System.EventHandler(this.comboNhaCC_TextChanged);
             // 
             // ckbDate
             // 
@@ -362,6 +364,7 @@ namespace QL_cua_hang_tien_loi
             this.ckbDate.Size = new System.Drawing.Size(15, 14);
             this.ckbDate.TabIndex = 13;
             this.ckbDate.UseVisualStyleBackColor = true;
+            this.ckbDate.CheckedChanged += new System.EventHandler(this.ckbDate_CheckedChanged);
             // 
             // label9
             // 
@@ -389,6 +392,7 @@ namespace QL_cua_hang_tien_loi
             this.dateTimeDenNgay.Name = "dateTimeDenNgay";
             this.dateTimeDenNgay.Size = new System.Drawing.Size(105, 20);
             this.dateTimeDenNgay.TabIndex = 10;
+            this.dateTimeDenNgay.ValueChanged += new System.EventHandler(this.dateTimeDenNgay_ValueChanged);
             // 
             // dateTimeTuNgay
             // 
@@ -398,6 +402,7 @@ namespace QL_cua_hang_tien_loi
             this.dateTimeTuNgay.Name = "dateTimeTuNgay";
             this.dateTimeTuNgay.Size = new System.Drawing.Size(108, 20);
             this.dateTimeTuNgay.TabIndex = 9;
+            this.dateTimeTuNgay.ValueChanged += new System.EventHandler(this.dateTimeTuNgay_ValueChanged);
             // 
             // panel8
             // 
@@ -481,6 +486,7 @@ namespace QL_cua_hang_tien_loi
             this.btnPrint.TabIndex = 4;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnSearch
             // 
@@ -491,6 +497,7 @@ namespace QL_cua_hang_tien_loi
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtMaNCC
             // 
@@ -533,7 +540,7 @@ namespace QL_cua_hang_tien_loi
             this.panel3.Size = new System.Drawing.Size(910, 28);
             this.panel3.TabIndex = 9;
             // 
-            // Công_Nợ_Nhà_Cung_Cấp
+            // frmCongNoNCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -545,8 +552,9 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.Name = "Công_Nợ_Nhà_Cung_Cấp";
-            this.Text = "Công_Nợ_Nhà_Cung_Cấp";
+            this.Name = "frmCongNoNCC";
+            this.Text = "Công nợ nhà cung cấp";
+            this.Load += new System.EventHandler(this.frmCongNoNCC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

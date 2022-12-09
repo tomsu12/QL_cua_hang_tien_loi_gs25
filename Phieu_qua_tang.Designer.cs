@@ -1,7 +1,7 @@
 ﻿
 namespace QL_cua_hang_tien_loi
 {
-    partial class Phieu_qua_tang
+    partial class frmPhieuQuaTang
     {
         /// <summary>
         /// Required designer variable.
@@ -157,6 +157,8 @@ namespace QL_cua_hang_tien_loi
             this.txtTriGiaPhieu.Name = "txtTriGiaPhieu";
             this.txtTriGiaPhieu.Size = new System.Drawing.Size(103, 22);
             this.txtTriGiaPhieu.TabIndex = 40;
+            this.txtTriGiaPhieu.Layout += new System.Windows.Forms.LayoutEventHandler(this.txtTriGiaPhieu_Layout);
+            this.txtTriGiaPhieu.Leave += new System.EventHandler(this.txtTriGiaPhieu_Leave);
             // 
             // label1
             // 
@@ -179,6 +181,7 @@ namespace QL_cua_hang_tien_loi
             this.btnCLR.TabIndex = 36;
             this.btnCLR.Text = "CLR";
             this.btnCLR.UseVisualStyleBackColor = true;
+            this.btnCLR.Click += new System.EventHandler(this.btnCLR_Click);
             // 
             // MaNV
             // 
@@ -258,6 +261,7 @@ namespace QL_cua_hang_tien_loi
             this.btnOK.TabIndex = 35;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Leave += new System.EventHandler(this.btnOK_Click);
             // 
             // panel2
             // 
@@ -273,7 +277,7 @@ namespace QL_cua_hang_tien_loi
             this.panel2.Size = new System.Drawing.Size(628, 30);
             this.panel2.TabIndex = 38;
             // 
-            // Phiếu_quà_tặng
+            // frmPhieuQuaTang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -288,8 +292,9 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.panel2);
-            this.Name = "Phiếu_quà_tặng";
+            this.Name = "frmPhieuQuaTang";
             this.Text = "Phiếu_quà_tặng";
+            this.Load += new System.EventHandler(this.frmPhieuQuaTang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

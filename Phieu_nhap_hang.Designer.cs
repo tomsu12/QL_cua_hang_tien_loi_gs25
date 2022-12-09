@@ -67,7 +67,7 @@ namespace QL_cua_hang_tien_loi
             this.btnNCC = new System.Windows.Forms.Button();
             this.comboNhanVien = new System.Windows.Forms.ComboBox();
             this.comboMaNCC = new System.Windows.Forms.ComboBox();
-            this.lblSoChungTu = new System.Windows.Forms.Label();
+            this.lblSoHoaDon = new System.Windows.Forms.Label();
             this.lblNgayThang = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -114,6 +114,7 @@ namespace QL_cua_hang_tien_loi
             this.btnMatHang.TabIndex = 126;
             this.btnMatHang.Text = ">>";
             this.btnMatHang.UseVisualStyleBackColor = true;
+            this.btnMatHang.Click += new System.EventHandler(this.btnMatHang_Click);
             // 
             // comboMaHang
             // 
@@ -124,6 +125,8 @@ namespace QL_cua_hang_tien_loi
             this.comboMaHang.Name = "comboMaHang";
             this.comboMaHang.Size = new System.Drawing.Size(165, 21);
             this.comboMaHang.TabIndex = 125;
+            this.comboMaHang.SelectedIndexChanged += new System.EventHandler(this.comboMaHang_SelectedIndexChanged);
+            this.comboMaHang.Leave += new System.EventHandler(this.comboMaHang_Leave);
             // 
             // btnCLR
             // 
@@ -133,6 +136,7 @@ namespace QL_cua_hang_tien_loi
             this.btnCLR.TabIndex = 118;
             this.btnCLR.Text = "CLR";
             this.btnCLR.UseVisualStyleBackColor = true;
+            this.btnCLR.Click += new System.EventHandler(this.btnCLR_Click);
             // 
             // btnDeleteTB
             // 
@@ -142,6 +146,7 @@ namespace QL_cua_hang_tien_loi
             this.btnDeleteTB.TabIndex = 117;
             this.btnDeleteTB.Text = "Delete";
             this.btnDeleteTB.UseVisualStyleBackColor = true;
+            this.btnDeleteTB.Click += new System.EventHandler(this.btnDeleteTB_Click);
             // 
             // label22
             // 
@@ -160,6 +165,7 @@ namespace QL_cua_hang_tien_loi
             this.btnUpdateTB.TabIndex = 116;
             this.btnUpdateTB.Text = "Update";
             this.btnUpdateTB.UseVisualStyleBackColor = true;
+            this.btnUpdateTB.Click += new System.EventHandler(this.btnUpdateTB_Click);
             // 
             // txtChietKhau
             // 
@@ -167,6 +173,7 @@ namespace QL_cua_hang_tien_loi
             this.txtChietKhau.Name = "txtChietKhau";
             this.txtChietKhau.Size = new System.Drawing.Size(46, 20);
             this.txtChietKhau.TabIndex = 114;
+            this.txtChietKhau.TextChanged += new System.EventHandler(this.txtChietKhau_TextChanged);
             // 
             // txtThanhToan
             // 
@@ -177,6 +184,7 @@ namespace QL_cua_hang_tien_loi
             this.txtThanhToan.Size = new System.Drawing.Size(167, 29);
             this.txtThanhToan.TabIndex = 117;
             this.txtThanhToan.Text = "0";
+            this.txtThanhToan.TextChanged += new System.EventHandler(this.txtThanhToan_TextChanged);
             // 
             // dataGridView1
             // 
@@ -196,8 +204,9 @@ namespace QL_cua_hang_tien_loi
             this.dataGridView1.Location = new System.Drawing.Point(320, 213);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(587, 258);
+            this.dataGridView1.Size = new System.Drawing.Size(598, 258);
             this.dataGridView1.TabIndex = 124;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // STT
             // 
@@ -284,6 +293,7 @@ namespace QL_cua_hang_tien_loi
             this.btnInsertTB.TabIndex = 115;
             this.btnInsertTB.Text = "Insert";
             this.btnInsertTB.UseVisualStyleBackColor = true;
+            this.btnInsertTB.Click += new System.EventHandler(this.btnInsertTB_Click);
             // 
             // panel5
             // 
@@ -298,7 +308,7 @@ namespace QL_cua_hang_tien_loi
             this.panel5.Controls.Add(this.txtThanhToan);
             this.panel5.Location = new System.Drawing.Point(320, 470);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(589, 93);
+            this.panel5.Size = new System.Drawing.Size(598, 93);
             this.panel5.TabIndex = 131;
             // 
             // lblconlai
@@ -320,6 +330,7 @@ namespace QL_cua_hang_tien_loi
             this.btnThoat.TabIndex = 121;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnTimKiem
             // 
@@ -329,6 +340,7 @@ namespace QL_cua_hang_tien_loi
             this.btnTimKiem.TabIndex = 120;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnLuu
             // 
@@ -338,6 +350,7 @@ namespace QL_cua_hang_tien_loi
             this.btnLuu.TabIndex = 119;
             this.btnLuu.Text = "Lưu và In";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuy
             // 
@@ -347,6 +360,7 @@ namespace QL_cua_hang_tien_loi
             this.btnHuy.TabIndex = 118;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // label24
             // 
@@ -374,6 +388,7 @@ namespace QL_cua_hang_tien_loi
             this.txtTongPhaiTra.Size = new System.Drawing.Size(119, 20);
             this.txtTongPhaiTra.TabIndex = 128;
             this.txtTongPhaiTra.Text = "0";
+            this.txtTongPhaiTra.TextChanged += new System.EventHandler(this.txtTongPhaiTra_TextChanged);
             // 
             // txtChietkhauHD
             // 
@@ -383,6 +398,7 @@ namespace QL_cua_hang_tien_loi
             this.txtChietkhauHD.Size = new System.Drawing.Size(119, 20);
             this.txtChietkhauHD.TabIndex = 129;
             this.txtChietkhauHD.Text = "0";
+            this.txtChietkhauHD.TextChanged += new System.EventHandler(this.txtChietkhauHD_TextChanged);
             // 
             // label21
             // 
@@ -419,6 +435,7 @@ namespace QL_cua_hang_tien_loi
             this.txtTienHang.Size = new System.Drawing.Size(119, 20);
             this.txtTienHang.TabIndex = 130;
             this.txtTienHang.Text = "0";
+            this.txtTienHang.TextChanged += new System.EventHandler(this.txtTienHang_TextChanged);
             // 
             // txtSoLuong
             // 
@@ -426,6 +443,7 @@ namespace QL_cua_hang_tien_loi
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(100, 20);
             this.txtSoLuong.TabIndex = 114;
+            this.txtSoLuong.Leave += new System.EventHandler(this.txtSoLuong_Leave);
             // 
             // btnNCC
             // 
@@ -435,6 +453,7 @@ namespace QL_cua_hang_tien_loi
             this.btnNCC.TabIndex = 113;
             this.btnNCC.Text = ">>";
             this.btnNCC.UseVisualStyleBackColor = true;
+            this.btnNCC.Click += new System.EventHandler(this.button_Click);
             // 
             // comboNhanVien
             // 
@@ -443,6 +462,7 @@ namespace QL_cua_hang_tien_loi
             this.comboNhanVien.Name = "comboNhanVien";
             this.comboNhanVien.Size = new System.Drawing.Size(177, 21);
             this.comboNhanVien.TabIndex = 112;
+            this.comboNhanVien.TextChanged += new System.EventHandler(this.comboNhanVien_TextChanged);
             // 
             // comboMaNCC
             // 
@@ -453,17 +473,18 @@ namespace QL_cua_hang_tien_loi
             this.comboMaNCC.Name = "comboMaNCC";
             this.comboMaNCC.Size = new System.Drawing.Size(308, 21);
             this.comboMaNCC.TabIndex = 111;
+            this.comboMaNCC.TextChanged += new System.EventHandler(this.comboMaNCC_TextChanged);
             // 
-            // lblSoChungTu
+            // lblSoHoaDon
             // 
-            this.lblSoChungTu.AutoSize = true;
-            this.lblSoChungTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoChungTu.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblSoChungTu.Location = new System.Drawing.Point(638, 13);
-            this.lblSoChungTu.Name = "lblSoChungTu";
-            this.lblSoChungTu.Size = new System.Drawing.Size(64, 16);
-            this.lblSoChungTu.TabIndex = 110;
-            this.lblSoChungTu.Text = "_______";
+            this.lblSoHoaDon.AutoSize = true;
+            this.lblSoHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoHoaDon.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblSoHoaDon.Location = new System.Drawing.Point(638, 13);
+            this.lblSoHoaDon.Name = "lblSoHoaDon";
+            this.lblSoHoaDon.Size = new System.Drawing.Size(64, 16);
+            this.lblSoHoaDon.TabIndex = 110;
+            this.lblSoHoaDon.Text = "_______";
             // 
             // lblNgayThang
             // 
@@ -662,6 +683,7 @@ namespace QL_cua_hang_tien_loi
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(113, 20);
             this.txtDonGia.TabIndex = 114;
+            this.txtDonGia.Leave += new System.EventHandler(this.txtDonGia_Leave);
             // 
             // txtDVT
             // 
@@ -756,7 +778,7 @@ namespace QL_cua_hang_tien_loi
             this.panel1.Controls.Add(this.btnNCC);
             this.panel1.Controls.Add(this.comboNhanVien);
             this.panel1.Controls.Add(this.comboMaNCC);
-            this.panel1.Controls.Add(this.lblSoChungTu);
+            this.panel1.Controls.Add(this.lblSoHoaDon);
             this.panel1.Controls.Add(this.lblNgayThang);
             this.panel1.Controls.Add(this.lblUser);
             this.panel1.Controls.Add(this.label7);
@@ -806,6 +828,7 @@ namespace QL_cua_hang_tien_loi
             this.Controls.Add(this.panel1);
             this.Name = "frmPhieuNhapHang";
             this.Text = "Phiếu Nhập Hàng";
+            this.Load += new System.EventHandler(this.frmPhieuNhapHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -862,7 +885,7 @@ namespace QL_cua_hang_tien_loi
         private System.Windows.Forms.Button btnNCC;
         private System.Windows.Forms.ComboBox comboNhanVien;
         private System.Windows.Forms.ComboBox comboMaNCC;
-        private System.Windows.Forms.Label lblSoChungTu;
+        private System.Windows.Forms.Label lblSoHoaDon;
         private System.Windows.Forms.Label lblNgayThang;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label7;

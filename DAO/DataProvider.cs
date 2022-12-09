@@ -19,7 +19,7 @@ namespace QL_cua_hang_tien_loi.DAO
             private set { DataProvider.instance = value; }
         }
         private DataProvider() { }
-        private string cStr = "Data Source=MINHANH\\MSSQLSERVER01;Initial Catalog=QuanLyCuaHangTienLoi2;Integrated Security=True";
+        private string cStr = "Data Source=MINHANH\\MSSQLSERVER01;Initial Catalog=QuanLyCuaHangGS25;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

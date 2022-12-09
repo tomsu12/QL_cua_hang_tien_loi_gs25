@@ -143,6 +143,7 @@ namespace QL_cua_hang_tien_loi
             this.btndongy.TabIndex = 3;
             this.btndongy.Text = "Đồng ý";
             this.btndongy.UseVisualStyleBackColor = true;
+            this.btndongy.Click += new System.EventHandler(this.btndongy_Click);
             // 
             // label3
             // 

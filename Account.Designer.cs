@@ -67,6 +67,7 @@ namespace QL_cua_hang_tien_loi
             this.btnCLR.TabIndex = 18;
             this.btnCLR.Text = "CLR";
             this.btnCLR.UseVisualStyleBackColor = true;
+            this.btnCLR.Click += new System.EventHandler(this.btnCLR_Click);
             // 
             // btnOK
             // 
@@ -77,6 +78,7 @@ namespace QL_cua_hang_tien_loi
             this.btnOK.TabIndex = 17;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // rdoTimKiem
             // 
@@ -193,6 +195,7 @@ namespace QL_cua_hang_tien_loi
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(750, 208);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // comboRole
             // 
@@ -224,6 +227,7 @@ namespace QL_cua_hang_tien_loi
             this.comboMaNV.Name = "comboMaNV";
             this.comboMaNV.Size = new System.Drawing.Size(129, 21);
             this.comboMaNV.TabIndex = 8;
+            this.comboMaNV.Leave += new System.EventHandler(this.comboMaNV_Leave);
             // 
             // txtpassword
             // 
